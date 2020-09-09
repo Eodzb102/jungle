@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+.only_m {display: none !important;}
+.m_btn {display: none !important;}
+
+#wrap {min-width: 1024px; overflow: hidden; font-family: sans-serif;}
+.container { width: 1000px; margin: 0 auto; height: 100%; }
+.hide {position: absolute; left: -9999px; width: 0; height: 0; overflow: hidden;}
+
+#header {height: 74px; width: 100%; position: absolute; top: 0; padding-top: 20px; border-bottom: 1px solid rgba(204, 204, 204, 0.5); box-sizing: border-box; z-index: 11; }
+#header h1 {width: 75px; height: 33px;}
+#header h1 a {display: block; width: 100%; height: 100%;}
+#header h1 a img {display: block; width: 100%; height: 100%;}
+
+.main_visual {width: 100%; position: relative; }
+.main_visual .introduction {position: relative; background-color: #F2F3F8; padding-bottom: 134px;}
+.main_visual .introduction::after {content: ''; display: block; width: 52%; height: 100%; position: absolute; top: 0; right: 0; background-color: #574BFF;}
+.main_visual .introduction .container {position: relative; z-index: 10;}
+.main_visual .introduction .container > div {padding-top: 168px;}
+.main_visual .introduction .container > div h2 {width: 500px; font: bold 60px 'Montserrat'; color: #333; margin-bottom: 10px; line-height: 66px;}
+.main_visual .introduction .container > div h2 span {color: #574BFF;}
+.main_visual .introduction .container > div > span {display: inline-block; padding: 0 16px; height: 30px; margin-bottom: 20px; border-radius: 22px; border: 1px solid #333; font: 300 16px/30px 'Noto sans KR',sans-serif; text-align: center; color: #333;}
+.main_visual .introduction .container > div p {width: 425px; margin-bottom: 25px; color: #333; font: 300 20px 'Noto sans KR',sans-serif; line-height: 28px; word-break: keep-all;}
+.main_visual .introduction .container > div p strong {color: #574BFF; font-weight: bold;}
+.main_visual .introduction .container > div p em {font-weight: bold; }
+.main_visual .introduction .container > div a {display: block; width: 188px; height: 50px; margin-bottom: 36px; border-radius: 25px; text-align: center; font: bold 24px 'Noto sans KR',sans-serif;line-height: 50px; background-color:#EC4848; color:#fff;  }
+.main_visual .introduction .container div div {position: absolute; right: -82px; top: 182px; opacity: 0; transition: all 0.6s; }
+.main_visual .introduction .container > div > dl {width: 540px; height: 196px; color: #333; box-sizing: border-box; padding: 30px 38px; background-color: #FFF; border-radius: 29px; box-shadow: 0px 3px 6px #868C9A80; overflow: hidden; }
+.main_visual .introduction .container > div > dl dt {float: left; width: 100px; font-family: 'Noto sans KR',sans-serif; line-height: 28px; clear: left; }
+.main_visual .introduction .container > div > dl dd {float: left; font-family: 'Noto sans KR',sans-serif; line-height: 28px; font-weight: 300;}
+
+.contents {padding-top: 90px; background-color: #F2F3F8; color: #333;}
+.contents article:first-child {height: 524px;}
+.contents article .title span {display: block; position: relative; width: 163px; padding-top: 6px;}
+.contents article .title span::after {content: ''; display: block; position: absolute; width: 23px; height: 23px; background-color: #7369FF; border-radius: 50%; top: 0; right: 0;}
+.contents article .title {font: 900 45px 'Montserrat'; line-height: 50px;}
+.contents .design_school .container {position: relative; height: 100%;}
+.contents .design_school .title {margin-bottom: 25px; display: block;}
+.contents .design_school .title + p {margin-bottom: 80px; font: 600 28px 'Noto sans KR', sans-serif; line-height: 36px;}
+.contents .design_school .title + p span {color: #574BFF;display: block;}
+.contents .design_school p:last-of-type {width: 390px; font: 300 20px 'Noto sans KR', sans-serif; line-height: 28px; word-break: keep-all;}
+.contents .design_school p:last-of-type strong {font: 600 20px 'Noto sans KR', sans-serif;}
+.contents .design_school p:last-of-type em {color: #E53626 ; font-weight: 600;}
+.contents .design_school p:last-of-type span {color: #574BFF; font-weight: 600;}
+.contents .design_school img {position: absolute; right: 100px; bottom: 0; height: 400px; opacity: 0; transition: all 0.6s;}
+
+.contents article + article .container {overflow: hidden;}
+.contents article + article {padding:56px 0 91px;}
+.contents article + article .title {margin-bottom: 60px; display: block; }
+.contents article + article .title span {width: 364px;}
+.contents article + article ul {float: left; height: 248px;}
+.contents article + article ul li {float: left; position: relative; left: -30px; opacity: 0; width: 248px; height: 248px; border-radius: 50%; text-align: center; box-sizing: border-box; padding-top: 100px; color: #FFF; font: 400 20px/28px 'Montserrat'; background-color: #91B8FC;}
+.contents article + article ul li:last-child {background-color: #7369FF; margin-left: -34px;}
+.contents article + article p {position: relative; right: -30px; opacity: 0; float: left; font: 300 20px 'Noto sans KR', sans-serif; color: #333; line-height: 28px; margin: 70px 0 0 70px;}
+.contents article + article p em {font-weight: 600; display: block;}
+.contents article + article p strong {color: #574BFF;}
+
+.tool_portfolio article:first-child {background-color: #5F5DFF; padding-top: 110px; position: relative;}
+.tool_portfolio article:first-child h2 {font: 200 28px 'Noto sans KR', sans-serif; line-height: 36px; color: #fff;}
+.tool_portfolio article:first-child h2 strong {font-weight: 600; display: block; color: #FFE61A;}
+.tool_portfolio article:first-child h2 em {font-weight: 600; }
+.tool_portfolio article:first-child ul {height: 243px; bottom: -122px; }
+.tool_portfolio article:first-child ul::before {content: ''; display: block; position: absolute; bottom: 0; right: -1510px; transform: translateY(50%); width: 1500px; opacity: 0; max-width: 1432px; height: 109px; background-color: #3030C6;}
+.tool_portfolio article:first-child ul::after {content: url(../img/d_MXDN/uiux_bg.png); display: block; position: absolute; bottom: 0; right: 20%; opacity: 0; }
+.tool_portfolio article:first-child ul li {position: relative; left: -30px; opacity: 0; float: left; position: relative; bottom: -122px; height: 243px; width: 204px; background-color: #fff; border-radius: 22px; box-shadow: 6px 6px 20px #4A42731C; text-align: center; z-index: 10;}
+.tool_portfolio article:first-child ul li + li {margin-left: 40px;}
+.tool_portfolio article:first-child ul li strong {font: bold 28px/38px 'Montserrat'; color: #5F5DFF; margin:65px 0 40px; display: block;}
+.tool_portfolio article:first-child ul li p {font: bold 16px/28px 'Noto sans KR', sans-serif; color: #333;}
+.tool_portfolio article:nth-child(2) {background-color: #F2F3F8; padding-top: 210px;} 
+.tool_portfolio article:nth-child(2) h2 {font: 300 28px/36px 'Noto sans KR', sans-serif; color: #333; margin-bottom: 96px;}
+.tool_portfolio article:nth-child(2) > div {overflow: hidden;} 
+.tool_portfolio article:nth-child(2) > div img {width: 25%;float: left;}
+
+.enrolment .recruit {padding:73px 0 103px; background-color: #00B09B;}
+.enrolment .recruit h2 {font: 300 28px/40px 'Noto sans KR',sans-serif; color: #fff; margin-bottom: 64px;}
+.enrolment .recruit h2 strong {color: #FFDC60;}
+.enrolment .recruit ul {height: 262px; } 
+.enrolment .recruit ul li { float: left; position: relative; width: 218px; height: 262px; box-sizing: border-box; padding: 55px 15px 0 20px ; background-color: #00907F; color: #fff; word-break: keep-all; left: 30px; opacity: 0; }
+.enrolment .recruit ul li + li {margin-left: 28px;}
+.enrolment .recruit ul li::after {content: ''; display: block; width: 0; height: 0; position: absolute; left: -10px; top: 20px; border-top: 46px solid #FFDC60; border-right: 46px solid transparent;}
+.enrolment .recruit ul li strong {display: block; margin-bottom: 32px; font: Bold 18px 'Noto sans KR',sans-serif; line-height: 28px;  }
+.enrolment .recruit ul li p {font: 300 16px 'Noto sans KR',sans-serif; line-height: 24px;}
+.enrolment article + article {padding-top: 65px; background-color: #F2F3F8;}
+.enrolment article + article h3 {font: Bold 28px 'Noto sans KR',sans-serif; line-height: 36px; margin-bottom: 26px; color: #333;}
+.enrolment article + article ul {overflow: hidden;}
+.enrolment article + article ul li {margin-right: 1.8%; float: left; width: 320px;}
+.enrolment article + article ul li img {width: 100%;}
+.enrolment article + article ul li:nth-child(3) {margin-right: 0;}
+.enrolment article + article ul li span {display: block; margin: 10px 0 50px; font: 300 16px/24px 'Noto sans KR', sans-serif; color: #333;}
+
+.enrolment .curriculum {width: 100%; background-color: #5F5DFF; padding: 60px 0;}
+.enrolment .curriculum h2 {font: bold 36px 'Montserrat';  margin-bottom: 34px; color: #fff;}
+.enrolment .curriculum ol {background-color: #fff;  padding: 50px 30px 40px 36px; box-sizing: border-box;}
+.enrolment .curriculum ol li {overflow: hidden; margin-bottom: 25px;}
+.enrolment .curriculum ol li div {float: left; width: 50%; overflow: hidden;}
+.enrolment .curriculum ol li div strong {float: left; width: 12%; color: #5010BF; font: 600 16px 'Montserrat'; line-height: 28px;}
+.enrolment .curriculum ol li div p {float: left; width: 86%; color: #000; font: 300 16px 'Noto Sans KR',sans-serif; line-height: 24px; }
+.enrolment .curriculum ol li div p span { display: block; text-indent: 10px;}
+
+
+.class_information {background: #F2F3F8; padding-bottom: 210px; position: relative;}
+.class_information::after {content: ''; display: block; width: 0; opacity: 0; height: 382px; position: absolute; left: 0; bottom: 117px; background-color: #d9dffa; border-radius: 0 279px 279px 0;}
+.class_information .instructor_info {padding-top: 64px; margin-bottom: 101px;}
+.class_information .instructor_info h2 {margin-bottom: 79px; font: Bold 28px 'Noto sans KR',sans-serif; color: #333;}
+.class_information .instructor_info .box {position: relative; height: 429px; color: #333; border-radius: 35px; padding: 30px 105px 0 231px; box-sizing: border-box;background-color:#fff;}
+.class_information .instructor_info .box dl { box-sizing: border-box; font-family:'Noto sans KR',sans-serif; font-weight: 300; font-size: 16px; }
+.class_information .instructor_info .box::after {content: ''; width: 156px; height: 156px; background: url(../img/d_MXDN/MXDN_teacher_01.png); background-size: contain; display: block; position: absolute; top: -50px; left: 30px;}
+.class_information .instructor_info .box dl dt {float: left; margin-right: 5px;}
+.class_information .instructor_info .box dl dd {font-weight: 600;}
+.class_information .instructor_info .box > p { font: 300 16px/24px 'Noto sans KR',sans-serif;  padding-left: 26px; text-indent: -26px; margin-bottom: 38px;}
+.class_information .instructor_info .box p span {display: block; color: #5F5DFF; font-weight: 600;}
+.class_information .instructor_info .box > strong {display: block; font:bold 16px/24px 'Noto sans KR',sans-serif; margin-bottom: 14px;}
+.class_information .instructor_info .box > div {overflow: hidden;}
+.class_information .instructor_info .box > div div {float: left; width: 50%;}
+.class_information .instructor_info .box > div div:last-child {margin:-24px 0 0 2%; width: 48%;}
+.class_information .instructor_info .box > div div p { font:300 14px/24px 'Noto sans KR',sans-serif;}
+
+.class_information article > h3 {font: Bold 28px/55px 'Noto sans KR', sans-serif; margin-bottom: 70px; color: #333}
+.class_information article .image_slide {position: relative; height: 370px;width: 100%; z-index: 10; }
+.class_information article .image_slide .box {height: 370px; width: 560px; margin: 0 auto; overflow: hidden;}
+.class_information article .image_slide .slide {height: 370px; width: 560px; position: relative;}
+.class_information article .image_slide .slide li {width: 560px; position: absolute; height: 370px; background-color: #fff; box-sizing: border-box; border-top: 4px solid #5268e7; padding: 34px 18px 0 30px;}
+.class_information article .image_slide .slide li strong {display: block; font: bold 16px/24px 'Noto Sans KR', sans-serif; margin-bottom: 36px;}
+.class_information article .image_slide .slide li p {font: 300 16px/24px 'Noto Sans KR', sans-serif; word-break: keep-all; }
+.class_information article .image_slide .indicator {position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); width: 126px; height: 10px; overflow: hidden;}
+.class_information article .image_slide .indicator li {float: left; width: 9px; height: 9px; background-color: #fff; border-radius: 50%; overflow: hidden; text-indent: -9999px;}
+.class_information article .image_slide .indicator li.on {background-color: #5268E7;}
+.class_information article .image_slide .indicator li a {display: block; width: 100%; height: 100%;}
+.class_information article .image_slide .indicator li + li {margin-left: 30px;}
+.class_information article .image_slide .control {width: 80%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+.class_information article .image_slide .control li {width: 32px; height: 32px; border-radius: 8px; background-color: #F1F2F7;float: left; position: relative;}
+.class_information article .image_slide .control li a {display: block; width: 100%; height: 100%;}
+.class_information article .image_slide .control li a img {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.class_information article .image_slide .control li:last-child {float: right;}
+.class_information article .image_slide .control li:last-child a img {transform: translate(-50%, -50%) rotate(180deg);}
+
+
+
+.deferred_payment {padding: 106px 0 65px; background: #EBE5DD url(../img/d_WXDP/00.png) no-repeat 80% 180%;}
+.deferred_payment .container {overflow: hidden;}
+.deferred_payment .container > p {margin-bottom: 70px; font: 300 28px/40px 'Noto sans KR',sans-serif; color: #333;}
+.deferred_payment .container > p > em {font-weight: 600;}
+.deferred_payment .container > p > strong {color: #F96432;}
+.deferred_payment .container > p > a {display: inline-block; border-radius: 25px; padding: 0 15px; box-shadow: 2px 2px 4px #B1A48CA3; background-color: #F96432; color: #FFF; font: 300 16px 'Noto sans KR',sans-serif; line-height: 34px; vertical-align: text-bottom;}
+.deferred_payment .container > p > a:first-of-type {margin-right: 10px;}
+.deferred_payment .container > div:first-of-type {margin-right: 40px;}
+.deferred_payment .container > div {width: 460px; height: 560px; background-color: #FCFBF9; border-radius: 35px; float: left; padding: 40px 0 0 40px; box-sizing: border-box; font-family: 'Noto sans KR',sans-serif; color: #333; }
+.deferred_payment .container > div > strong {display: block; font-weight: 600; font-size: 24px; margin-bottom: 20px;}
+.deferred_payment .container > div > ol {padding-left: 30px; box-sizing: border-box; position: relative; height: 80%; clear: both;}
+.deferred_payment .container > div:first-of-type ol::before {content: ''; display: block; position: absolute; top: 0; left: 0; width: 20px; height: 100%; background-color: #FF8000; box-shadow: 0px 3px 6px #B4AA9D40; border-radius: 9px;}
+.deferred_payment .container > div > ol li {height: 33.3%; position: relative;}
+.deferred_payment .container > div > ol li::before {content: ''; display: block; width: 13px; height: 13px; background-color: #fff; border-radius: 50%; position: absolute; left: -27px; top: 5px; z-index: 10;}
+.deferred_payment .container > div > ol li > strong {font-size: 20px; }
+.deferred_payment .container > div > ol li > p {font-size: 16px; width: 340px; word-break: keep-all;}
+.deferred_payment .container > div:last-child > strong {float: left; margin-right: 10px; }
+.deferred_payment .container > div:last-child > p {float: left; background-color: #FFF; height: 33px; border: 1px solid #EBE5DD; border-radius: 10px; padding: 0 10px; overflow: hidden; line-height: 33px;}
+.deferred_payment .container > div:last-child > p span {float: left; font-size: 14px; }
+.deferred_payment .container > div:last-child > p span:last-child {margin-right: 0;}
+.deferred_payment .container > div:last-child > p span::after {float: right; margin: 15px 12px 0 5px; content: ''; display: block; width: 25px; height: 6px; background-color: #FF8000; border-radius: 3px;}
+.deferred_payment .container > div:last-child > p span:last-child::after {background-color: #006700;}
+.deferred_payment .container > div:last-child ol li {height: 25%;}
+.deferred_payment .container > div:last-child ol li:nth-child(3) {height: 20%;}
+.deferred_payment .container > div:last-child ol li:nth-child(4) {height: 30%;}
+.deferred_payment .container > div:last-child ol li::after {content: ''; display: block; width: 20px; height: 120%; background-color: #FF8000; position: absolute; left: -30px; top: 0; box-shadow: 0px 3px 6px #B4AA9D40; border-radius: 9px;}
+.deferred_payment .container > div:last-child ol li:nth-child(even)::after {background-color: #006700;}
+.deferred_payment .container > div:last-child ol li:last-child:after {height: 100%;}
+
+
+.location {background-color: #F1F2F7; padding: 51px 0 100px;}
+.location h2 {font: Bold 32px/55px 'Noto Sans KR',sans-serif; color: #333; margin-bottom: 26px;}
+.location p {font: 400 16px/26px 'Noto sans KR',sans-serif; color: #333; margin-bottom: 20px;}
+.location p strong {font-weight: 600; color: #F5754A;}
+.location .map iframe {width: 100%; height: 480px;} 
+
+.fixed_bar {width: 100%; height: 112px; position: fixed; bottom: 0; z-index: 1000; transition: bottom 0.4s;}
+.bar_menu_top {height: 42px; background-color: #FF8000; color: #FFF; font: 300 16px/42px 'Noto sans KR',sans-serif;}
+.bar_menu {width: 100%; height: 70px; background-color: rgba(32, 33, 36, 0.9);  color: #FFF;}
+.bar_menu p {float: left; font: Bold 20px/70px 'Noto sans KR',sans-serif; }
+.bar_menu .btn {float: right; overflow: hidden;}
+.bar_menu .btn a {padding: 8px 23px; font: 400 16px 'Noto sans KR',sans-serif; border-radius: 19px; line-height: 40px;}
+.bar_menu .btn a:nth-child(1) {background-color: #454BF3;}
+.bar_menu .btn a:nth-child(2) {background-color: #F3456E;}
+.fixed_bar.off {bottom: -114px;}
+
+#footer {background-color: #202124; padding: 30px 0 36px;}
+#footer .logo {margin-bottom: 24px;}
+#footer .logo img {width: 75px; height: 33px;}
+#footer address {color: #7D7D7D; font: 400 14px/20px 'Noto Sans Korean'; margin-bottom: 26px;}
+#footer .copy {color: #7D7D7D; font: 400 14px/20px 'Noto Sans Korean';}
+
+
+@media screen and (max-width: 1550px) {
+    .tool_portfolio article:first-child ul::before {width: 1073px;}
+    .tool_portfolio article:first-child ul::after {right: 12%;}
+    .tool_portfolio article:nth-child(2) > div img {width: 50%;}
+}
+
+@media screen and (max-width: 1280px) {
+    .class_information::after {width: 95%;}
+    .tool_portfolio article:first-child ul::before {width: 90%;}
+    .tool_portfolio article:first-child ul::after {right: 0%;}
+}
+
+
+.main_visual .introduction.now .container div div { top: 152px; opacity: 1;}
+.contents .design_school.now img { right: 136px;  opacity: 1;}
+.contents article + article.now ul li:first-child {animation: fadeLeft 0.6s 0.3s forwards;}
+.contents article + article.now ul li:last-child {animation: fadeLeft 0.6s 0.8s forwards;}
+.contents article + article.now p {animation: fadeRight 0.6s 0.8s forwards;} 
+.tool_portfolio article:first-child.now ul::before {animation: fadeRight 0.8s 0.5s forwards;} 
+.tool_portfolio article:first-child.now ul::after {animation: fadeIn 0.6s 1s forwards;}
+.tool_portfolio article:first-child.now ul li:nth-child(1) {animation: fadeLeft 0.6s 1.4s forwards;}
+.tool_portfolio article:first-child.now ul li:nth-child(2) {animation: fadeLeft 0.6s 1.8s forwards;}
+.tool_portfolio article:first-child.now ul li:nth-child(3) {animation: fadeLeft 0.6s 2.2s forwards;}
+.enrolment .recruit.now ul li:first-child {animation: fadeLeft 0.6s 0.4s forwards;}
+.enrolment .recruit.now ul li:nth-child(2) {animation: fadeLeft 0.6s 0.8s forwards;}
+.enrolment .recruit.now ul li:nth-child(3) {animation: fadeLeft 0.6s 1.2s forwards;}
+.enrolment .recruit.now ul li:last-child {animation: fadeLeft 0.6s 1.6s forwards;}
+.class_information.now::after {animation: fadeWidth1 0.6s 0.5s forwards;}
+
+
+@keyframes fadeWidth {0% {opacity: 0; } 100% {opacity: 1; width: 1262px; }}
+@keyframes fadeWidth1 {0% {opacity: 0; } 100% {opacity: 1; width: 1536px; }}
+@keyframes fadeLeft {0% {opacity: 0; } 100% {opacity: 1; left: 0;}}
+@keyframes fadeRight {0% {opacity: 0; } 100% {opacity: 1; right: 0;}}
+@keyframes fadeIn {0% {opacity: 0;} 100% {opacity: 1; }}

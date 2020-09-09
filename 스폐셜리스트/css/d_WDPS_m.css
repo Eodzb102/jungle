@@ -1,0 +1,184 @@
+@charset "utf-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* #wrap {min-width: 1024px;} */
+.container { width: 100%; height: 100%; padding: 0 8%;  box-sizing: border-box;}
+.hide {position: absolute; left: -9999px; width: 0; height: 0; overflow: hidden;}
+
+/* 모바일 none */
+.only_pc {display: none !important;}
+
+#header {height: 74px; width: 100%; position: absolute; top: 0;  padding-top: 20px; border-bottom: 1px solid rgba(204, 204, 204, 0.5); box-sizing: border-box; z-index: 100; }
+#header h1 {width: 75px; height: 33px;}
+#header h1 a {display: block; width: 100%; height: 100%;}
+#header h1 a img {display: block; width: 100%; height: 100%;}
+
+.Specialist {width: 100%;  background-color: #FAF2FF; padding-bottom: 74px; overflow: hidden;}
+.Specialist::before {content: ''; display: block; width: 100%; height: 700px; position: absolute; top: 0; left: 0; background-color: #895DE2; border-radius: 0px 0px 200px 0px; }
+.Specialist .introduction {height: 850px; }
+.Specialist .introduction .container {position: relative; }
+.Specialist .introduction .container > div {padding: 40% 7% 0 0;box-sizing: border-box; position: absolute; z-index: 10;}
+.Specialist .introduction .container > div h2 {width: 190px;font: 600 32px 'Noto sans KR', sans-serif; color: #FFF; margin-bottom: 70px; line-height: 38px; word-break: keep-all;}
+.Specialist .introduction .container > div > span {display: block; width: 150px; padding: 3px 10px; height: 24px; margin-bottom: 10px; border-radius: 22px; border: 1px solid #FFF;font: 200 16px 'Noto sans KR', sans-serif; line-height: 24px; text-align: center; color: #fff;}
+.Specialist .introduction .container > div > span:nth-of-type(2) {width: 110px;}
+.Specialist .introduction .container > div > span:nth-of-type(3) {width: 80px; margin-bottom: 20px;}
+.Specialist .introduction .container > div p { margin-bottom: 20px; color: #FFF; font: 200 18px 'Noto sans KR', sans-serif; line-height: 28px; word-break: keep-all;}
+.Specialist .introduction .container > div p strong {color: #FBD104; font-weight: 600; }
+.Specialist .introduction .container > div p em {font-weight: bold;}
+.Specialist .introduction .container > div a {display: none; }
+.Specialist .introduction .container div div {position: absolute; right: -160px; opacity: 0;  top: 22%; width: 400px; height: 180px; z-index: -1; background: url(../img/d_WDPS/main_img_bg.svg) no-repeat center; background-size: cover;}
+.Specialist .introduction .container div div img {display: none;}
+.Specialist .introduction .container > div > dl {height: 196px; color: #333; box-sizing: border-box; padding: 30px 25px; background-color: #FFF; border-radius: 29px; box-shadow: 0px 3px 6px #868C9A80; overflow: hidden;   }
+.Specialist .introduction .container > div > dl dt {float: left; margin-right: 6%; font: 400 16px 'Noto sans KR', sans-serif; line-height: 28px; clear: left; }
+.Specialist .introduction .container > div > dl dd {float: left; font: 300 16px 'Noto sans KR', sans-serif; line-height: 28px;}
+.Specialist article + article .container {overflow: hidden; padding: 13px 7% 0 7%; box-sizing: border-box;}
+.Specialist article + article h2 { font: Bold 24px 'Noto sans KR', sans-serif; width: 90%; line-height: 32px; color: #322D2D; word-break: keep-all; position: relative; z-index: 10; margin-bottom: 30px;}
+.Specialist article + article h2::before {content: ''; display: block; position: absolute; top: 0; left: 0; transform: translate(-50% ,-30%); width: 35px; height: 35px; border-radius: 50%; background-color: #E1B9FF; z-index: -1; }
+.Specialist article + article h2 span {position: relative;}
+.Specialist article + article h2 span::after {content: ''; display: block; width: 140px; height: 15px; background-color: #FFC633; position: absolute; bottom:33px; z-index: -1;}
+.Specialist article + article h2 span::before {content: ''; display: block; width: 170px; height: 15px; background-color: #FFC633; position: absolute; bottom:0; z-index: -1;}
+.Specialist article + article p { font: 300 16px 'Noto sans KR', sans-serif; line-height: 24px; color: #333; word-break: keep-all;}
+.Specialist article + article p em {font-weight: 600;}
+.Specialist article + article p strong {color: #895DE2;}
+.Specialist article + article ul { width: 296px; overflow: hidden; margin: 40px auto 0; }
+.Specialist article + article ul li {float: left; position: relative; left: 30px; opacity: 0; width: 170px; height: 170px; background-color: #E1B9FF; color: #FFF; font: 600 16px 'Montserrat'; padding-top: 60px; box-sizing: border-box; text-align: center; border-radius: 50%;}
+.Specialist article + article ul li:last-child {margin-left: -15%; background-color: #CC87FF;}
+
+.program_process {padding-top: 65px;}
+.program_process .work_piece {padding-bottom: 50px;}
+.program_process .work_piece .container {position: relative;}
+.program_process .work_piece h2 {position: relative; width: 80%; font: 600 24px 'Noto sans KR', sans-serif; line-height: 32px; margin-bottom: 24px; word-break: keep-all;}
+.program_process .work_piece h2:after {content: ''; display: block; width: 190px; height: 18px; background-color: #E1B9FF; position: absolute; bottom: 32px; z-index: -1;}
+.program_process .work_piece h2::before {content: ''; display: block; width: 125px; height: 18px; background-color: #E1B9FF; position: absolute; bottom:0; z-index: -1;}
+.program_process .work_piece p { font: 300 16px 'Noto sans KR', sans-serif; line-height: 24px; word-break: keep-all; color: #333333; margin-bottom: 20px;}
+.program_process .work_piece p em {font-weight: 600;}
+.program_process .work_piece.now .container div {opacity: 0;}
+.program_process .work_piece div img {width: 100%;}
+.program_process .learning_content {position: relative; padding: 60px 0; background-color: #FAF2FF; z-index: 10;}
+.program_process .learning_content ul li {margin-bottom: 72px; }
+.program_process .learning_content ul li:last-child {margin-bottom: 0;}
+.program_process .learning_content ul li div {position: relative; color: #333;}
+.program_process .learning_content ul li div:first-child strong {font: 600 32px 'Montserrat'; line-height: 38px; }
+.program_process .learning_content ul li div:first-child strong::before {content: ''; display: block; position: absolute; top: 0; left: 0; transform: translate(-50% ,-30%); width: 35px; height: 35px; border-radius: 50%; background-color: #E1B9FF; z-index: -1; }
+.program_process .learning_content ul li div:first-child p {font: 600 18px 'Noto sans KR', sans-serif; line-height: 26px; margin-top: 5px; color: #333; word-break: keep-all; }
+.program_process .learning_content ul li div:last-child {left: 0; max-width: 812px; background-color: #FFF; position: relative; border-radius: 29px; box-shadow: 6px 6px 12px #4B3C6224; opacity: 0; padding: 30px 20px; box-sizing: border-box; margin-top: 15px;}
+.program_process .learning_content ul li div:last-child p {font: 400 16px 'Noto sans KR', sans-serif; line-height: 24px; color: #333; word-break: keep-all; padding-left: 12px; text-indent: -12px;}
+.program_process .learning_content ul li div:last-child p strong {color: #895DE2;}
+.program_process .learning_content ul li:last-child div:last-child {margin-bottom: 0;}
+
+
+.enrolment { background-color: #F5F8FB; padding: 60px 0 40px;}
+.enrolment .recruit { position: relative; margin-bottom: 80px; padding-bottom: 160px;}
+.enrolment .recruit h2 {font: 300 24px 'Noto sans KR', sans-serif; line-height: 32px; color: #333; margin-bottom: 30px;}
+.enrolment .recruit ul { width: 250px; margin: 0 auto; } 
+.enrolment .recruit ul::before {content: ''; position: absolute; right: 0; top: 70px; width: 68vw; height: 98%; background-color: #E1B9FF; border-radius: 45px 0px 0px 0px;}
+.enrolment .recruit ul::after {content: ''; position: absolute; right: 25px; bottom: -20px; width: 200px; height: 180px; background: url(../img/d_WDPS/bg_word_m.png) no-repeat center; background-size: contain;}
+.enrolment .recruit ul li {position: relative; left: 30px; opacity: 0; width: 250px; height: 320px; margin-bottom: 20px; box-sizing: border-box; padding: 55px 20px; background-color: #895DE2; box-shadow: 6px 6px 15px #6D67BC91; border-radius: 20px; color: #FFF; word-break: keep-all; }
+.enrolment .recruit ul li strong {display: block; margin-bottom: 36px;  font: Bold 18px 'Noto sans KR', sans-serif; line-height: 28px;  }
+.enrolment .recruit ul li p {font: 300 16px 'Noto sans KR', sans-serif; line-height: 24px; }
+
+.curriculum {background-color: #F5F8FB;}
+.curriculum h2 {position: relative; font: 600 28px 'Montserrat'; line-height: 32px; margin-bottom: 28px;}
+.curriculum .container > ol > li {width: 100%; position: relative; margin-bottom: 20px; background-color: #FFF; padding: 30px 15px 20px 15px; box-sizing: border-box;}
+.curriculum .container > ol > li > p {margin-bottom: 30px; font: 600 18px/26px 'Montserrat'; line-height: 26px; color: #895DE2;}
+.curriculum .container > ol > li > p span {display: block; position: relative; font: 300 18px/26px 'Montserrat'; line-height: 26px; }
+.curriculum .container > ol > li > p span::before {content: ''; display: block; width: 70%; height: 2px; background-color: #E1B9FF; position: absolute; right: 0; bottom: 5px;}
+
+/* .curriculum .container .more_detailed {box-sizing: border-box; padding: 0 10px;} */
+.curriculum .container .more_detailed > li { box-sizing: border-box; margin-bottom: 18px; }
+.curriculum .container .more_detailed > li:last-child {margin-bottom: 0;}
+.curriculum .container .more_detailed > li > strong {display: block; margin-bottom: 8px; font: Bold 14px 'Montserrat'; color: #895DE2;  }
+.curriculum .container .more_detailed > li > ul { color: #333; padding-left: 3px;} 
+.curriculum .container .more_detailed > li ul li {font: 300 14px 'Noto sans KR', sans-serif; line-height: 22px; word-break: keep-all; padding-left: 10px; text-indent: -10px;}
+.curriculum .container .more_detailed > li p {font: 300 14px 'Noto sans KR', sans-serif; line-height: 22px; word-break: keep-all; padding-left: 10px; text-indent: -10px;}
+
+
+
+.class_information {padding: 40px 0; background: #FAF2FF; position: relative;}
+.class_information .instructor_info h2 {margin-bottom: 60px; font: 600 24px 'Noto sans KR', sans-serif; color: #333;}
+.class_information .instructor_info .box {position: relative; background-color: #FFF; border-radius: 16px; box-sizing: border-box; padding: 135px 10px 40px 20px; }
+.class_information .instructor_info .box::after {content: url(../img/d_WDPS/khy2.png); display: block; position: absolute; top: -40px; left: 50%; transform: translateX(-50%);}
+.class_information .instructor_info .box dl { box-sizing: border-box; font-family:'Noto sans KR', sans-serif; font-weight: 300; color: #333; font-size: 14px; overflow: hidden;}
+.class_information .instructor_info .box dl dt {float: left;  margin-right: 10px; margin-bottom: 20px;}
+.class_information .instructor_info .box dl dd {float: left;  font-weight: 600; margin-bottom: 20px;}
+.class_information .instructor_info .box p {font: 300 14px 'Noto sans KR', sans-serif; line-height: 24px;  color: #333; word-break: keep-all; }
+.class_information .instructor_info .box p:first-of-type {font-weight: 600; }
+.class_information .instructor_info .box p:nth-of-type(2) {margin-bottom: 16px; }
+.class_information .instructor_info .box p:nth-of-type(3) {margin-bottom: 24px; font-size: 14px;}
+.class_information .instructor_info .box strong {display: block; font: 600 14px/24px 'Noto sans KR', sans-serif; color: #333;}
+.class_information .instructor_info .box span {font: 300 14px/24px 'Noto sans KR', sans-serif; color: #333;}
+
+.deferred_payment {padding: 40px 0 65px; background: #EBE5DD url(../img/d_WDPS/00.png) no-repeat 135% 4%; background-size: 250px;}
+.deferred_payment .container {overflow: hidden;}
+.deferred_payment .container > p {margin-bottom: 32px; width: 250px;  font: 300 24px/32px 'Noto sans KR', sans-serif; color: #333; word-break: keep-all;}
+.deferred_payment .container > p > em {font-weight: 600;}
+.deferred_payment .container > p > strong {color: #F96432;}
+.deferred_payment .container > p > a {display: inline-block; border-radius: 25px; margin-top: 25px; padding: 0 15px; box-shadow: 2px 2px 4px #B1A48CA3; background-color: #F96432; color: #FFF; font: 300 16px 'Noto sans KR', sans-serif; line-height: 34px;}
+.deferred_payment .container > p > a:first-of-type {margin-right: 10px;}
+.deferred_payment .container > div { height: 460px; background-color: #FCFBF9; border-radius: 22px; margin-bottom: 20px; padding: 30px 18px 0 25px; box-sizing: border-box; font-family: 'Noto sans KR', sans-serif; color: #333; }
+.deferred_payment .container > div > strong {display: block; font-weight: 600; font-size: 18px; margin-bottom: 20px;}
+.deferred_payment .container > div > ol {padding-left: 30px; box-sizing: border-box; position: relative; height: 80%; clear: both;}
+.deferred_payment .container > div:first-of-type ol::before {content: ''; display: block; position: absolute; top: 0; left: 0; width: 20px; height: 100%; background-color: #FF8000; box-shadow: 0px 3px 6px #B4AA9D40; border-radius: 9px;}
+.deferred_payment .container > div > ol li {height: 33.3%; position: relative;}
+.deferred_payment .container > div > ol li::before {content: ''; display: block; width: 13px; height: 13px; background-color: #fff; border-radius: 50%; position: absolute; left: -27px; top: 5px; z-index: 10;}
+.deferred_payment .container > div > ol li > strong {font-size: 16px; }
+.deferred_payment .container > div > ol li > p {font-size: 16px; word-break: keep-all;}
+.deferred_payment .container > div:last-child {height: 660px; }
+.deferred_payment .container > div:last-child > strong {  margin-bottom: 10px; }
+.deferred_payment .container > div:last-child > p { background-color: #FFF; height: 33px; border: 1px solid #EBE5DD; border-radius: 10px; padding: 0 10px; overflow: hidden; line-height: 33px; margin-bottom: 15px ; padding: 0 20px; box-sizing: border-box;}
+.deferred_payment .container > div:last-child > p span {display: block; width: 50%; position: relative;  font-size: 14px; float: left; }
+.deferred_payment .container > div:last-child > p span::after {content: ''; display: block; width: 25px; height: 6px; position: absolute; top: 50%; left: 95px; transform: translate(-50%, -50%); background-color: #FF8000; border-radius: 3px;}
+.deferred_payment .container > div:last-child > p span:last-child::after {background-color: #006700; }
+.deferred_payment .container > div:last-child ol li {height: 25%;}
+.deferred_payment .container > div:last-child ol li:nth-child(2) {height: 30%;}
+.deferred_payment .container > div:last-child ol li:nth-child(3) {height: 20%;}
+.deferred_payment .container > div:last-child ol li::after {content: ''; display: block; width: 20px; height: 120%; background-color: #FF8000; position: absolute; left: -30px; top: 0; box-shadow: 0px 3px 6px #B4AA9D40; border-radius: 9px;}
+.deferred_payment .container > div:last-child ol li:nth-child(even)::after {background-color: #006700;}
+.deferred_payment .container > div:last-child ol li:last-child:after {height: 100%;}
+
+
+.location {background-color: #F1F2F7; padding: 37px 0 60px;}
+.location h2 {font: Bold 24px/32px 'Noto Sans Korean'; color: #333;}
+.location p {font: 400 16px/26px 'Noto sans KR', sans-serif; color: #333; margin-bottom: 20px;}
+.location p strong {font-weight: 600; color: #F5754A;}
+.location .map iframe {width: 100%; height: 280px;} 
+
+.fixed_bar {width: 100%; height: 70px; position: fixed; bottom: 0; z-index: 1000; transition: bottom 0.4s;}
+.bar_menu {width: 100%; height: 70px; background-color: rgba(32, 33, 36, 0.9);  color: #FFF;  }
+.bar_menu p {  font: Bold 20px/70px 'Noto sans KR', sans-serif;  text-align: center;}
+
+
+#footer {background-color: #202124; padding: 30px 0 86px;}
+#footer .logo {margin-bottom: 24px; width: 75px; height: 34px;}
+#footer .logo img {display: block; width: 100%; height: 100%;}
+#footer address {color: #7D7D7D; font: 400 14px/20px 'Noto Sans Korean'; margin-bottom: 26px;}
+#footer .copy {color: #7D7D7D; font: 400 14px/20px 'Noto Sans Korean';}
+
+
+
+/* 아티클에 on 붙이기 */
+
+.Specialist .introduction.now .container div div {animation: fade1 1s 0.3s forwards;} 
+.Specialist article + article.now ul li:first-child {animation: fadeUp1 0.8s 0.3s forwards;} 
+.Specialist article + article.now ul li:last-child {animation: fadeUp2 0.8s 0.5s forwards;} 
+.program_process .work_piece.now .container div {animation: fadeIn 1.2s 0.8s forwards;}
+.program_process .learning_content.now ul li:first-child div:last-child {animation: fadeLeft1 0.6s 0.8s forwards;}
+.program_process .learning_content.now ul li:nth-child(2) div:last-child {animation: fadeLeft1 0.6s 1.5s forwards;}
+.program_process .learning_content.now ul li:nth-child(3) div:last-child {animation: fadeLeft1 0.6s 2.2s forwards;}
+.program_process .learning_content.now ul li:last-child div:last-child {animation: fadeLeft1 0.6s 3.1s forwards;}
+
+.enrolment .recruit.now ul li:first-child {animation: fadeLeft 1.5s .5s forwards;}
+.enrolment .recruit.now ul li:nth-child(2) {animation: fadeLeft 1.5s 1.2s forwards;}
+.enrolment .recruit.now ul li:nth-child(3) {animation: fadeLeft 1.5s 1.6s forwards;}
+.enrolment .recruit.now ul li:last-child {animation: fadeLeft 1.5s 2.0s forwards;}
+
+
+@keyframes fade1 {0% {opacity: 0; right: -160px; } 100% {opacity: 1; right: -135px; }}
+@keyframes fadeIn {0% {opacity: 0;} 100% {opacity: 1; }}
+@keyframes fadeUp1 {0% {opacity: 0;} 100% {opacity: 1; left : 0;}}
+@keyframes fadeUp2 {0% {opacity: 0;} 100% {opacity: 1; left: 0;}}
+@keyframes fadeLeft {0% {opacity: 0; } 100% {opacity: 1; left: 0;}}
+@keyframes fadeRight {0% {opacity: 0; } 100% {opacity: 1; right: 0;}}
+@keyframes fadeLeft1 {0% {opacity: 0; left: 30px; } 100% {opacity: 1; left: 0;}}
+
+

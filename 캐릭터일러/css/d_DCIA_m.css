@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+
+.only_pc {display: none !important;}
+.pc_btn {display: none !important;}
+
+.container { width: 100%; padding: 0 7%; box-sizing: border-box;}
+.hide {position: absolute; left: -9999px; width: 0; height: 0; overflow: hidden;}
+
+#header {height: 74px; width: 100%; position: absolute; top: 0; padding-top: 20px; border-bottom: 1px solid rgba(204, 204, 204, 0.5); box-sizing: border-box; z-index: 11000; }
+#header h1 {width: 75px; height: 33px;}
+#header h1 a {display: block; width: 100%; height: 100%;}
+#header h1 a img {display: block; width: 100%; height: 100%;}
+
+.main_visual {width: 100%; overflow: hidden;}
+.main_visual .introduction { background-image: linear-gradient(to bottom, #FFCE3B 80%, #FEECBA 20%);padding-bottom: 40px; position: relative;}
+.main_visual .introduction .container > div {padding-top: 125px; z-index: 10; position: relative;}
+.main_visual .introduction .container > div h2 { font: bold 36px 'Montserrat'; color: #232125; margin-bottom: 10px; line-height: 42px;}
+.main_visual .introduction .container > div h2 strong {color: #6A28EE;}
+.main_visual .introduction .container > div > span {display: block; width: 90px; padding: 3px 10px; height: 24px; margin-bottom: 10px; border-radius: 22px; border: 1px solid #333;font: 300 16px 'Noto sans KR', sans-serif; line-height: 24px; text-align: center; color: #333;}
+.main_visual .introduction .container > div > span:nth-of-type(2) {width: 120px;}
+.main_visual .introduction .container > div > span:nth-of-type(3) {width: 80px; margin-bottom: 52px;}
+.main_visual .introduction .container > div p {margin-bottom: 12px; color: #333; font: 300 18px 'Noto sans KR',sans-serif; line-height: 26px; word-break: keep-all;}
+.main_visual .introduction .container > div p strong {color: #6A28EE; font-weight: 600;}
+.main_visual .introduction .container > div a {display: block; width: 188px; height: 50px; margin-bottom: 36px; border-radius: 25px; text-align: center; font: bold 24px 'Noto sans KR',sans-serif;line-height: 50px; background-color:#EC4848; color:#fff;  }
+.main_visual .introduction .container div .only_m {position: absolute; top: 95px; right: -40%; width: 383px; height: 380px; transition: all 0.6s; z-index: -1;}
+.main_visual .introduction .container div .only_m img:nth-child(1) {position: absolute; top: -30px; left: 50%; transform: translateX(-50%); opacity: 0;}
+.main_visual .introduction .container div .only_m img:nth-child(2) {position: absolute; bottom: 0; right: -30px; opacity: 0;}
+.main_visual .introduction .container div .only_m img:nth-child(3) {position: absolute; bottom: -30px; left: 0; opacity: 0;}
+.main_visual .introduction .container > div > dl {height: 196px; color: #333; box-sizing: border-box; padding: 30px 25px; background-color: #FFF; border-radius: 29px; box-shadow: 0px 3px 6px #868C9A80; overflow: hidden; }
+.main_visual .introduction .container > div > dl dt {float: left; margin-right: 6%; font: 400 16px 'Noto sans KR', sans-serif; line-height: 28px; clear: left; }
+.main_visual .introduction .container > div > dl dd {float: left; font: 300 16px 'Noto sans KR', sans-serif; line-height: 28px;}
+
+
+.class_information {color: #333; overflow: hidden;}
+.class_information .tc_interview {background-color: #FEECBA; padding-bottom: 20px;}
+.class_information .tc_interview .container > p {font: 300 18px 'Noto sans KR',sans-serif; width: 232px; line-height: 28px; margin-bottom: 30px; word-break: keep-all; }
+.class_information .tc_interview .container > p span {font-weight: 600;}
+.class_information .tc_interview .container > p strong {position: relative; z-index: 10; font-weight: 300; display: block;}
+.class_information .tc_interview .container > p strong::after {position: absolute; bottom: 0px; left: 0; content: ''; display: block; width: 160px; height: 12px; background-color: #FFCD3B; z-index: -1; }
+.class_information .tc_interview .container > p strong:first-of-type::after {width: 222px; bottom: 0px;} 
+.class_information .tc_interview .container > p strong:first-of-type::before {position: absolute; bottom: -26px; left: 0; content: ''; display: block; width: 232px; height: 12px; background-color: #FFCD3B; z-index: -1;}
+.class_information .tc_interview .video div { position: relative; margin-bottom: 10px;}
+.class_information .tc_interview .video iframe {width: 100%; height: 100%; position: absolute; left: 0; top: 0;}
+.class_information .tc_interview .video img {width: 100%; }
+.class_information .tc_interview ul li {position: relative; margin-bottom: 20px;}
+.class_information .tc_interview ul li:last-child {margin-bottom: 0;}
+.class_information .tc_interview ul li::after {content: ''; display: block; position: absolute; top: 25px; left: 0; width: 9px; height: 9px; border-radius: 50%; background-color: #FF8629; z-index: 10;}
+.class_information .tc_interview ul li::before {content: ''; display: block; position: absolute; top: 29px; left: 0; width: 100%; height: 2px; background-color: #FFB829; z-index: 10;}
+.class_information .tc_interview ul li strong {font: italic bold 16px 'Montserrat'; color: #362216; display: block; margin-bottom: 20px;}
+.class_information .tc_interview ul li p {font: 400 14px 'Noto sans KR',sans-serif; line-height: 25px; color: #362216; height: 25px;}
+.class_information .tc_interview ul li p span {font: 400 14px 'Noto sans KR',sans-serif; line-height: 25px; color: #ff8629; display: inline-block; margin-right: 10px;}
+
+.class_information .class_overview {background-image: linear-gradient(to bottom, #FFF6DF  90%, #FEECBA 10%); padding-top: 32px; position: relative;}
+.class_information .class_overview .container h2 {font: 700 24px 'Montserrat'; line-height: 32px; margin-bottom: 14px;}
+.class_information .class_overview .container h2 strong {position: relative; display: block; z-index: 10; font: bold 28px 'Montserrat'; line-height: 32px; color: #FF7F00;}
+.class_information .class_overview .container h2 strong::after {position: absolute; bottom: 0; left: 0; content: ''; display: block; width: 270px; height: 18px; background-color: #FEECBA; z-index: -1; }
+.class_information .class_overview .container > p {font: 300 18px 'Noto sans KR',sans-serif; line-height: 26px; margin-bottom: 20px; width: 320px;  word-break: keep-all;}
+.class_information .class_overview .container > p span {font-weight: 600;}
+.class_information .class_overview .container > p strong {color: #FF7F00;}
+.class_information .class_overview ul { padding: 0 10px 10px 0;}
+.class_information .class_overview ul li { height: 240px;  position: relative; left: 30px; z-index: 10; opacity: 0;  box-sizing: border-box; padding: 53px 20px 30px 30px; background-color: #fff; border-radius: 20px; box-shadow: 3px 3px 6px #CFB05952; margin-bottom: 20px; }
+.class_information .class_overview ul li:last-child {margin-bottom: 0;}
+.class_information .class_overview ul li strong {display: block; font: bold 14px 'Montserrat'; color: #FF7F00; margin-bottom: 5px;}
+.class_information .class_overview ul li em {display: block; font: bold 16px 'Noto sans KR',sans-serif; margin-bottom: 8px;}
+.class_information .class_overview ul li p {display: block; font: 300 14px 'Noto sans KR',sans-serif; line-height: 22px; word-break: keep-all;}
+
+.class_information .awards_fairs {background-color: #FEECBA; padding-top: 46px;}
+.class_information .awards_fairs .container h2 {font: bold 28px 'Montserrat'; color: #FF7F00; position: relative; z-index: 10; margin-bottom: 16px;}
+.class_information .awards_fairs .container h2::before {content: ''; display: block; width: 114px; height: 218px; position: absolute; left: -16%; top: 40px; z-index: -1; transform: translateY(-38%); background: url(../img/d_DCIA/fairs_bg1.svg) no-repeat center; background-size: cover;}
+.class_information .awards_fairs .container h2::after {position: absolute; bottom: 0; left: 0; content: ''; display: block; width: 260px; height: 18px; background-color: #FFF6DF; z-index: -1; }
+.class_information .awards_fairs .container > p {font: 300 18px 'Noto sans KR',sans-serif; margin-bottom: 20px; position: relative; z-index: 10;}
+.class_information .awards_fairs .container > p::after {content: ''; display: block; width: 152px; height: 290px; position: absolute; right: -40px; top: 110px;  background: url(../img/d_DCIA/fairs_bg2.svg) no-repeat center; background-size: cover; z-index: -1; }
+.class_information .awards_fairs .container > p strong {font-weight: 400;}
+.class_information .awards_fairs ul { padding-bottom: 10px; width: 296px; margin: 0 auto; z-index: 10; position: relative; }
+.class_information .awards_fairs ul li { width: 290px; height: 329px; border-radius: 20px; box-shadow: 3px 3px 6px #CFB05952; background-color: #fff; overflow: hidden; margin-bottom: 20px;}
+.class_information .awards_fairs ul li a {display: block; width: 100%; height: 100%;}
+.class_information .awards_fairs ul li img {display: block; margin-bottom: 17px; width: 100%;}
+.class_information .awards_fairs ul li span {display: block; box-sizing: border-box; padding: 0 20px; font: 300 12px 'Noto sans KR',sans-serif; color:#999999;}
+.class_information .awards_fairs ul li p {box-sizing: border-box; padding: 0 20px; font: 300 14px 'Noto sans KR',sans-serif; color: #333333;}
+.class_information .awards_fairs ul li p strong {display: block;}
+.class_information .awards_fairs ul li p cite {display: block; font: 300 10px 'Noto sans KR',sans-serif; color:#999999;}
+
+
+
+.interview {background-color: #9078F2; padding-top: 44px;}
+.interview article {max-height: 940px; height: 940px; overflow: hidden; position: relative; transition: max-height 1.5s; padding-bottom: 40px;}
+.interview article h2 {color: #fff; font: bold 24px 'Montserrat'; position: relative; z-index: 10; padding-left: 2px; margin-bottom: 14px;}
+.interview article h2::after {position: absolute; bottom: 0; left: 0; content: ''; display: block; width: 154px; height: 18px; background-color: #33B474; z-index: -1; }
+.interview article > p {font: 300 16px 'Noto sans KR',sans-serif; color: #fff; margin-bottom: 10px;}
+.interview article > div { height: 157px; overflow: hidden; background-color: #fff; box-sizing: border-box;  border-radius: 16px; margin-bottom: 20px; }
+.interview article > div a {display: block; width: 100%; height: 100%;  position: relative; box-sizing: border-box; padding: 0 20px 10px;}
+.interview article > div a img {position: absolute; top: 20px; width: 50px;  left: 30px;}
+.interview article > div strong {font: 600 16px 'Noto sans KR',sans-serif; color: #6A28EE; box-sizing: border-box; padding: 20px 0 0 25%; display: block;}
+.interview article > div em {font: 600 14px 'Noto sans KR',sans-serif; color: #333; display: block;box-sizing: border-box; padding-left: 25%; margin-bottom: 15px;}
+.interview article > div p {font: 300 14px 'Noto sans KR',sans-serif; color: #333; line-height: 20px; margin-bottom: 6px; word-break: keep-all; float: left; }
+.interview article > div span {font: 400 11px 'Montserrat'; color: #9078F2; display: block; }
+.interview article > div:nth-of-type(n+5) {display: none;}
+.interview article > div:last-of-type {margin-bottom: 0;}
+.interview article > div:nth-of-type(-n+2) {height: 212px;}
+.interview article > div:nth-of-type(-n+2) a {padding: 23px 20px 0 34%}
+.interview article > div:nth-of-type(-n+2) a strong{padding: 0;}
+.interview article > div:nth-of-type(-n+2) a img { height: 100%; width: 30%; left: 0; top: 0;}
+.interview article > div:nth-of-type(-n+2) em {margin-bottom: 2px; padding: 0;}
+.interview article > div:nth-of-type(-n+2) p {margin-bottom: 5px; float: none;}
+.interview article > div:nth-of-type(-n+2) span {display: inline-block; background-color: #9078F2; color:#fff; border-radius: 11px; padding: 2px 10px;}
+.interview article > a {font: 600 16px 'Noto sans KR',sans-serif;position: absolute; width: 93px; left: 50%; bottom: 20px; transform: translateX(-50%); color: #fff; background-color: #6A28EE; border-radius: 22px; padding: 10px 53px; }
+.interview article.more > div:nth-of-type(n+5) {display: block;}
+.interview article.more {max-height: 2600px; height: auto;} 
+.interview article.more > a {display: none;}
+
+.enrolment .recruit {padding: 50px 0 40px; background: url(../img/d_DCIA/recruit_bg.svg) no-repeat center; background-size: cover;}
+.enrolment .recruit h2 {font: 300 22px/28px 'Noto sans KR',sans-serif; color: #333; margin-bottom: 20px;}
+.enrolment .recruit ul li {max-height:196px;margin-bottom: 10px; box-sizing: border-box; padding: 30px 40px 30px 30px; border-radius: 16px; background-color: #fff; box-shadow: 3px 3px 6px #C5B59582; transition: max-height 0.4s; }
+.enrolment .recruit ul li:last-child {margin-bottom: 0;}
+.enrolment .recruit ul li span {display: block; font: bold 16px 'Montserrat'; color: #FF7F00; margin-bottom: 5px;}
+.enrolment .recruit ul li > strong {display: block; margin-bottom: 20px; font: Bold 16px 'Noto sans KR',sans-serif; line-height: 24px; word-break: keep-all; color: #333;}
+.enrolment .recruit ul li p {font: 300 14px 'Noto sans KR',sans-serif; line-height: 24px; word-break: keep-all; max-height: 0; overflow: hidden;  opacity: 0; transition: all 1s;}
+.enrolment .recruit ul li p strong {width: 100%; display: block;}
+.enrolment .recruit ul li a {font: 600 16px 'Noto sans KR',sans-serif; display: block; width: 202px; height: 44px; color: #fff; border-radius: 22px; margin: 0 auto; background-color: #FF7F00; text-align: center; line-height: 44px;}
+.enrolment .recruit ul li.more p { max-height: 500px; opacity: 1;}
+.enrolment .recruit ul li.more {max-height: 500px;} 
+.enrolment .recruit ul li.more a {display: none;}
+
+.enrolment .field {padding:60px 0 250px; background: url(../img/d_DCIA/field_bg_m.png) no-repeat center; background-size: 100% 100%;position: relative;}
+.enrolment .field h2 {font: 300 22px 'Noto sans KR',sans-serif; line-height: 28px; margin-bottom: 30px; color: #333;}
+.enrolment .field ul { width: 296px; height: 444px; margin: 0 auto;}
+.enrolment .field ul li {float: left; width: 148px; height: 148px;position: relative; top: -30px; opacity: 0;  border-radius: 50%; color: #fff; padding-top: 50px; box-sizing: border-box; text-align: center;font: Bold 16px 'Noto sans KR',sans-serif;}
+.enrolment .field ul li:nth-child(2) {background-color: #FDD08D;}
+.enrolment .field ul li:nth-child(3) {background-color: #FDD08D;}
+.enrolment .field ul li:nth-child(4) {background-color: #9DD7FF;}
+.enrolment .field ul li:nth-child(5) {background-color: #9DD7FF;}
+.enrolment .field ul li:first-child {background-color: #FF98C5;}
+.enrolment .field ul li:last-child {background-color: #FF98C5;}
+.enrolment .field .container > p {position: absolute; width: 230px; left:50%; bottom:95px; opacity: 0; transform: translateX(-50%); font: 300 16px 'Noto sans KR',sans-serif; word-break: keep-all; text-align: center; color: #333;}
+
+
+
+.enrolment .curriculum { background-color: #9078F2; padding: 60px 0 42px;}
+.enrolment .curriculum h2 {color: #fff; font: bold 24px 'Montserrat'; position: relative; z-index: 10; padding-left: 2px; margin-bottom: 14px; padding-left: 4px;}
+.enrolment .curriculum h2::after {position: absolute; bottom: 0; left: 0; content: ''; display: block; width: 182px; height: 18px; background-color: #33B474; z-index: -1; }
+.enrolment .curriculum .container > ul > li {max-height: 415px; background-color: #fff; box-shadow: 3px 3px 6px #A1A1A182; border-radius: 16px; margin-bottom: 20px; padding: 20px 20px 20px 16px; box-sizing: border-box; overflow: hidden; transition: max-height 1s;} 
+.enrolment .curriculum .container > ul > li > strong { height: 100%; display: block; margin-bottom: 10px; color: #6A28EE; font: 600 18px 'Noto sans KR',sans-serif;}
+.enrolment .curriculum .container > ul > li > div > p {font: 300 16px 'Noto sans KR',sans-serif; line-height: 24px; margin-bottom: 20px; word-break: keep-all;  padding-left: 10px; text-indent: -10px;}
+.enrolment .curriculum .container > ul > li > div p span {display: block;}
+.enrolment .curriculum .container li li:first-child {margin-bottom: 20px;}
+.enrolment .curriculum .container li li strong {font: 600 16px 'Noto sans KR',sans-serif; line-height: 24px; margin-bottom: 3px;}
+.enrolment .curriculum .container li li p {font: 300 14px 'Noto sans KR',sans-serif; line-height: 22px; word-break: keep-all; padding-left: 15px; text-indent: -15px;}
+.enrolment .curriculum .container > ul > li > div strong {display: block; font: 600 16px 'Noto sans KR',sans-serif; line-height: 24px; margin-bottom: 3px;}
+.enrolment .curriculum .container > ul > li .video { position: relative; display: none;}
+.enrolment .curriculum .container > ul > li .video iframe {width: 100%; height: 100%; position: absolute; left: 0; top: 0;}
+.enrolment .curriculum .container > ul > li .video img {width: 100%;}
+.enrolment .curriculum .container > ul > li:last-child div strong {margin-bottom: 10px; display: none;}
+.enrolment .curriculum .container > ul > li ul {display: none;}
+.enrolment .curriculum .container > ul > li .only_m {display: block; width: 202px; height: 44px; background-color: #6A28EE; color: #fff; border-radius: 22px; margin: 0 auto; text-align: center;  font: 600 16px 'Noto sans KR',sans-serif;line-height: 44px;}
+.enrolment .curriculum .container > ul > li.more {max-height: 1000px;}
+.enrolment .curriculum .container > ul > li.more ul {display: block;}
+.enrolment .curriculum .container > ul > li.more .only_m {display: none;}
+.enrolment .curriculum .container > ul > li.more .video {display: block;}
+.enrolment .curriculum .container > ul > li:last-child.more div strong {display: block;}
+
+.enrolment .student_portfolio {padding: 60px 0 24px; background-color: #FFF6DF;}
+.enrolment .student_portfolio h3 {font: 600 22px/28px 'Noto sans KR',sans-serif; margin-bottom: 20px; color: #333;}
+.enrolment .student_portfolio ul { overflow:hidden; transition: max-height 1.5s; max-height: 2000px;}
+.enrolment .student_portfolio ul li { margin-bottom: 20px}
+.enrolment .student_portfolio ul li img {width: 100%; display: block; margin-bottom: 5px;}
+.enrolment .student_portfolio ul li strong {display: block; font: 600 12px 'Noto sans KR', sans-serif; color: #333;}
+.enrolment .student_portfolio ul li p {font: 300 12px 'Noto sans KR', sans-serif; color: #333;}
+.enrolment .student_portfolio ul li:nth-child(n+3) {display: none;}
+.enrolment .student_portfolio a.only_m {font: 600 16px 'Noto sans KR',sans-serif; display: block; width: 202px; height: 44px; color: #fff; border-radius: 22px; margin: 0 auto; background-color: #FF7F00; text-align: center; line-height: 44px;}
+.enrolment .student_portfolio a.only_m {font: 600 16px 'Noto sans KR',sans-serif; display: block; width: 202px; height: 44px; color: #fff; border-radius: 22px; margin: 0 auto; background-color: #FF7F00; text-align: center; line-height: 44px;}
+.enrolment .student_portfolio ul.more li:nth-child(n+3) {display: block;}
+.enrolment .student_portfolio ul.more {max-height: 6000px;}
+
+.instructor_info {padding-top: 50px; padding-bottom: 101px; background-color: #F2F3F8;}
+.instructor_info h2 {margin-bottom: 55px; font: Bold 18px 'Noto sans KR',sans-serif; color: #333;}
+.instructor_info .box {position: relative; color: #333; border-radius: 35px; padding: 136px 30px 28px 20px; box-sizing: border-box;background-color:#fff;}
+.instructor_info .box dl { box-sizing: border-box; font-family:'Noto sans KR',sans-serif; font-weight: 300; font-size: 16px; }
+.instructor_info .box::after {content: ''; width: 156px; height: 156px; background: url(../img/d_DCIA/1.png); background-size: contain; display: block; position: absolute; top: -50px; left: 50%; transform: translateX(-50%);}
+.instructor_info .box dl dt {float: left; margin-right: 5px;}
+.instructor_info .box dl dd {font-weight: 600;}
+.instructor_info .box div {margin-bottom: 24px;}
+.instructor_info .box div p { font: 300 14px/24px 'Noto sans KR',sans-serif;  word-break: keep-all;}
+.instructor_info .box div:first-of-type strong {display: block; color: #5F5DFF; font: 600 16px 'Noto sans KR',sans-serif;}
+.instructor_info .box div:first-of-type p:nth-of-type(-n+3) {font-weight: 600;}
+.instructor_info .box strong {display: block; font:bold 16px/24px 'Noto sans KR',sans-serif;}
+
+
+.deferred_payment {padding: 40px 0 65px; background: #EBE5DD url(../img/d_DCIA/00.png) no-repeat 135% 4%; background-size: 250px;}
+.deferred_payment .container {overflow: hidden;}
+.deferred_payment .container > p {margin-bottom: 32px; width: 250px;  font: 300 24px/32px 'Noto sans KR', sans-serif; color: #333; word-break: keep-all;}
+.deferred_payment .container > p > em {font-weight: 600;}
+.deferred_payment .container > p > strong {color: #F96432;}
+.deferred_payment .container > p > a {display: inline-block; border-radius: 25px; margin-top: 25px; padding: 0 15px; box-shadow: 2px 2px 4px #B1A48CA3; background-color: #F96432; color: #FFF; font: 300 16px 'Noto sans KR', sans-serif; line-height: 34px;}
+.deferred_payment .container > p > a:first-of-type {margin-right: 10px;}
+.deferred_payment .container > div { height: 460px; background-color: #FCFBF9; border-radius: 22px; margin-bottom: 20px; padding: 30px 18px 0 25px; box-sizing: border-box; font-family: 'Noto sans KR', sans-serif; color: #333; }
+.deferred_payment .container > div > strong {display: block; font-weight: 600; font-size: 18px; margin-bottom: 20px;}
+.deferred_payment .container > div > ol {padding-left: 30px; box-sizing: border-box; position: relative; height: 80%; clear: both;}
+.deferred_payment .container > div:first-of-type ol::before {content: ''; display: block; position: absolute; top: 0; left: 0; width: 20px; height: 100%; background-color: #FF8000; box-shadow: 0px 3px 6px #B4AA9D40; border-radius: 9px;}
+.deferred_payment .container > div > ol li {height: 33.3%; position: relative;}
+.deferred_payment .container > div > ol li::before {content: ''; display: block; width: 13px; height: 13px; background-color: #fff; border-radius: 50%; position: absolute; left: -27px; top: 5px; z-index: 10;}
+.deferred_payment .container > div > ol li > strong {font-size: 16px; }
+.deferred_payment .container > div > ol li > p {font-size: 16px; word-break: keep-all;}
+.deferred_payment .container > div:last-child {height: 660px; }
+.deferred_payment .container > div:last-child > strong {  margin-bottom: 10px; }
+.deferred_payment .container > div:last-child > p { background-color: #FFF; height: 33px; border: 1px solid #EBE5DD; border-radius: 10px; padding: 0 8px; overflow: hidden; line-height: 33px; margin-bottom: 15px;}
+.deferred_payment .container > div:last-child > p span {display: block; width: 50%; position: relative;  font-size: 14px; float: left; }
+.deferred_payment .container > div:last-child > p span::after {content: ''; display: block; width: 25px; height: 6px; position: absolute; top: 50%; left: 95px; transform: translate(-50%, -50%); background-color: #FF8000; border-radius: 3px;}
+.deferred_payment .container > div:last-child > p span:last-child::after {background-color: #006700; }
+.deferred_payment .container > div:last-child ol li {height: 25%;}
+.deferred_payment .container > div:last-child ol li:nth-child(2) {height: 30%;}
+.deferred_payment .container > div:last-child ol li:nth-child(3) {height: 20%;}
+.deferred_payment .container > div:last-child ol li::after {content: ''; display: block; width: 20px; height: 120%; background-color: #FF8000; position: absolute; left: -30px; top: 0; box-shadow: 0px 3px 6px #B4AA9D40; border-radius: 9px;}
+.deferred_payment .container > div:last-child ol li:nth-child(even)::after {background-color: #006700;}
+.deferred_payment .container > div:last-child ol li:last-child:after {height: 100%;}
+
+
+.location {background-color: #F1F2F7; padding: 37px 0 60px;}
+.location h2 {font: Bold 24px/35px 'Noto Sans Korean'; color: #333;}
+.location p {font: 400 16px/26px 'Noto sans KR', sans-serif; color: #333; margin-bottom: 20px;}
+.location p strong {font-weight: 600; color: #F5754A;}
+.location .map iframe {width: 100%; height: 280px;}
+
+.fixed_bar {width: 100%; height: 55px; position: fixed; bottom: 0; z-index: 1000;}
+.bar_menu {width: 100%; height: 55px; background-color: rgba(32, 33, 36, 0.9);  color: #FFF;}
+.bar_menu .only_m { font: Bold 16px/55px 'Noto sans KR',sans-serif; text-align: center; }
+
+
+#footer {background-color: #202124; padding: 30px 0 76px;}
+#footer .logo {margin-bottom: 24px;}
+#footer .logo img {width: 75px; height: 33px;}
+#footer address {color: #7D7D7D; font: 400 14px/20px 'Noto Sans Korean'; margin-bottom: 26px;}
+#footer .copy {color: #7D7D7D; font: 400 14px/20px 'Noto Sans Korean';}
+
+
+.main_visual .introduction.now .container div .only_m img:nth-child(1) {animation: fadeTop 1s .5s forwards; }
+.main_visual .introduction.now .container div .only_m img:nth-child(2) {animation: fadeRight 1s .8s forwards; }
+.main_visual .introduction.now .container div .only_m img:nth-child(3) {animation: fadeBottom 1s 1.3s forwards; }
+.class_information .class_overview.now ul li:nth-child(1) {animation: fadeLeft 1.5s .8s forwards; }
+.class_information .class_overview.now ul li:nth-child(2) {animation: fadeLeft 1.5s 1.5s forwards; }
+.class_information .class_overview.now ul li:nth-child(3) {animation: fadeLeft 1.5s 2s forwards; }
+.enrolment .field.now ul li:nth-child(1) {animation: fadeTop 1s .5s forwards; }
+.enrolment .field.now ul li:nth-child(2) {animation: fadeTop 1s .5s forwards; }
+.enrolment .field.now ul li:nth-child(3) {animation: fadeTop 1s 1s forwards; }
+.enrolment .field.now ul li:nth-child(4) {animation: fadeTop 1s 1s forwards; }
+.enrolment .field.now ul li:nth-child(5) {animation: fadeTop 1s 1.5s forwards; }
+.enrolment .field.now ul li:nth-child(6) {animation: fadeTop 1s 1.5s forwards; }
+.enrolment .field.now .container > p {animation: fadeBottom1 1.5s 2s forwards; }
+
+@keyframes fadeBottom {0% {} 100% {opacity: 1; bottom: 0;}}
+@keyframes fadeBottom1 {0% {} 100% {opacity: 1; bottom: 75px;}}
+@keyframes fadeTop {0% { } 100% {opacity: 1; top: 0;}}
+@keyframes fadeRight {0% { } 100% {opacity: 1; right: 0;}}
+@keyframes fadeLeft {0% { } 100% {opacity: 1; left: 0;}}
+@keyframes fadeIn {0% {} 100% {opacity: 1; }}
+
+
+@media screen and (max-width: 360px) {
+    .interview article > div {max-height: 230px;}
+    .interview article > div a {padding: 0 15px 10px;}
+    .interview article > div p {word-break: break-all;}
+    .class_information .awards_fairs .container > p br.only_m {display: none;}
+}
+
+
+

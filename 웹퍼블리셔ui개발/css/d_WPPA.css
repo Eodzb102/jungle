@@ -11,47 +11,49 @@
 #header h1 a {display: block; width: 100%; height: 100%;}
 #header h1 a img {display: block; width: 100%; height: 100%;}
 
-.main_visual {width: 100%;  background-color: #725EFF; padding: 272px 0 263px; }
-.main_visual .introduction .container {position: relative;}
+.main_visual {width: 100%; }
+.main_visual .introduction {background-color: #725EFF; padding: 232px 0 263px;}
+.main_visual .introduction .container {position: relative;} 
 .main_visual .introduction .container > div h2 {width: 500px; font: 600 48px 'Noto Sans KR', sans-serif; color: #fff; margin-bottom: 20px; line-height: 54px; word-break: keep-all;}
 .main_visual .introduction .container > div > span {display: inline-block; padding: 0 16px; height: 30px; margin-bottom: 20px; border-radius: 22px; border: 1px solid #FFF; font: 300 16px/30px 'Noto Sans KR', sans-serif; text-align: center; color: #fff;}
 .main_visual .introduction .container > div p {width: 514px; margin-bottom: 20px; color: #FFF; font: 300 20px 'Noto Sans KR', sans-serif; line-height: 28px; word-break: keep-all;}
 .main_visual .introduction .container > div a {display: block; width: 188px; height: 50px; border-radius: 25px; text-align: center; font: bold 24px 'Noto Sans KR', sans-serif;line-height: 50px; background-color:#FF7843; color:#fff; box-shadow: 5px 5px 10px #4E51CF;}
-.main_visual .introduction .container div div {position: absolute; right: -150px; top: -35px; opacity: 0; }
-.main_visual .introduction .container > div > dl {position: absolute; bottom: -340px; width: 570px; height: 196px; color: #333; box-sizing: border-box; padding: 30px 38px; background-color: #FFF; border-radius: 29px; box-shadow: 0px 3px 6px #868C9A80; overflow: hidden; }
+.main_visual .introduction .container div div {position: absolute; right: -175px; top: -35px; opacity: 0; }
+.main_visual .introduction .container > div > dl {position: absolute; bottom: -375px; width: 570px;  color: #333; box-sizing: border-box; padding: 30px 38px; background-color: #FFF; border-radius: 29px; box-shadow: 0px 3px 6px #868C9A80; overflow: hidden; }
 .main_visual .introduction .container > div > dl dt {float: left; width: 100px; font-family: 'Noto Sans KR', sans-serif; line-height: 28px; clear: left; }
 .main_visual .introduction .container > div > dl dd {float: left; font-family: 'Noto Sans KR', sans-serif; line-height: 28px; font-weight: 300;}
 
 
-.process .portfolio_process {padding: 170px 0 106px ; background: url(../img/d_WPPA/maxwell-nelson-Ix64NPGxZoQ-unsplash.png) no-repeat center; background-size: cover;}
-.process .portfolio_process p.title {position: relative; height: 106px; font: 300 28px 'Noto Sans KR', sans-serif; line-height: 36px; color: #333; margin-bottom: 50px; padding-left: 23px;}
-.process .portfolio_process p.title::before {content: ''; display: block; position: absolute; left: 0; top: 3px; width: 8px; height: 100%; background-color: #725EFF;}
-.process .portfolio_process p.title em {color: #725EFF;}
-.process .portfolio_process ul {overflow: hidden;}
-.process .portfolio_process ul li { width: 297px; height: 297px; border-radius: 50%; border: 1px solid #725EFF; float: left; box-sizing: border-box; padding: 50px 16px; text-align: center; position: relative; left: 30px; opacity: 0;}
-.process .portfolio_process ul li + li {margin-left: 20px;}
-.process .portfolio_process ul li strong {display: block; font: 600 20px 'Noto Sans KR', sans-serif; line-height: 26px; width: 170px; margin: 0 auto; word-break: keep-all; color: #333;}
-.process .portfolio_process ul li strong::after {content: ''; display: block; width: 250px; height: 1px; background-color: #725EFF; margin: 15px -40px ; }
-.process .portfolio_process ul li strong em {color: #725EFF;}
-.process .portfolio_process ul li p {font: 300 16px 'Noto Sans KR', sans-serif; line-height: 24px; word-break: keep-all;}
-.process article + article {padding: 66px 0 70px; background-color: #FFD06E;}
-.process article + article p.title {position: relative; height: 106px; font: 300 28px 'Noto Sans KR', sans-serif; line-height: 36px; color: #333; margin-bottom: 48px; padding-left: 23px;}
-.process article + article p.title em {font-weight: 600; color: #242E8D;}
-.process article + article p.title::before {content: ''; display: block; position: absolute; left: 0; top: 3px; width: 8px; height: 100%; background-color: #242E8D;}
-.process article + article .container > p span {color: #fff; background-color: #2634B7; font: 400 16px 'Noto Sans KR', sans-serif; padding: 4px 14px;}
-.process article + article .container > p span:last-child {background-color: #0B1465; padding: 4px 38px;}
-.process article + article ul {margin: 14px 0 10px; overflow: hidden; width: 940px;}
-.process article + article ul li {width: 206px; height: 206px; border-radius: 50%; border: 1px solid #2634B7; box-sizing: border-box; padding: 60px 40px; word-break: keep-all; text-align: center; float: left;}
-.process article + article ul li {margin-right: -23px;}
-.process article + article ul li:nth-child(n+3) {border-color: #0B1465;}
-.process article + article ul li:nth-child(n+3) strong {color: #0B1465;}
-.process article + article ul li strong {font: 600 24px 'Noto Sans KR', sans-serif; color: #2634B7;}
-.process article + article ul li p {font: 600 18px 'Noto Sans KR', sans-serif; color: #333;}
-.process article + article p.bar {width: 940px; margin-bottom: 16px;}
-.process article + article p.bar img {width: 100%;}
-.process article + article .container > p:last-child {font: 300 16px 'Noto Sans KR', sans-serif; line-height: 24px; color: #333;}
-.process article + article .container > p:last-child strong:nth-child(2) {color: #2634B7;}
-.process article + article .container > p:last-child strong:last-child {color: #0B1465;}
+.main_visual .portfolio_process {padding: 170px 0 106px ; background: url(../img/d_WPPA/maxwell-nelson-Ix64NPGxZoQ-unsplash.png) no-repeat center; background-size: cover;}
+.main_visual .portfolio_process p.title {position: relative; height: 106px; font: 300 28px 'Noto Sans KR', sans-serif; line-height: 36px; color: #333; margin-bottom: 50px; padding-left: 23px;}
+.main_visual .portfolio_process p.title::before {content: ''; display: block; position: absolute; left: 0; top: 3px; width: 8px; height: 100%; background-color: #725EFF;}
+.main_visual .portfolio_process p.title em {color: #725EFF;}
+.main_visual .portfolio_process ul {overflow: hidden;}
+.main_visual .portfolio_process ul li { width: 297px; height: 297px; border-radius: 50%; border: 1px solid #725EFF; float: left; box-sizing: border-box; padding: 50px 16px; text-align: center; position: relative; left: 30px; opacity: 0;}
+.main_visual .portfolio_process ul li + li {margin-left: 20px;}
+.main_visual .portfolio_process ul li strong {display: block; font: 600 20px 'Noto Sans KR', sans-serif; line-height: 26px; width: 170px; margin: 0 auto; word-break: keep-all; color: #333;}
+.main_visual .portfolio_process ul li strong::after {content: ''; display: block; width: 250px; height: 1px; background-color: #725EFF; margin: 15px -40px ; }
+.main_visual .portfolio_process ul li strong em {color: #725EFF;}
+.main_visual .portfolio_process ul li p {font: 300 16px 'Noto Sans KR', sans-serif; line-height: 24px; word-break: keep-all;}
+
+.process article {padding: 66px 0 70px; background-color: #FFD06E;}
+.process article p.title {position: relative; height: 106px; font: 300 28px 'Noto Sans KR', sans-serif; line-height: 36px; color: #333; margin-bottom: 48px; padding-left: 23px;}
+.process article p.title em {font-weight: 600; color: #242E8D;}
+.process article p.title::before {content: ''; display: block; position: absolute; left: 0; top: 3px; width: 8px; height: 100%; background-color: #242E8D;}
+.process article .container > p span {color: #fff; background-color: #2634B7; font: 400 16px 'Noto Sans KR', sans-serif; padding: 4px 14px;}
+.process article .container > p span:last-child {background-color: #0B1465; padding: 4px 38px;}
+.process article ul {margin: 14px 0 10px; overflow: hidden; width: 940px;}
+.process article ul li {width: 206px; height: 206px; border-radius: 50%; border: 1px solid #2634B7; box-sizing: border-box; padding: 60px 40px; word-break: keep-all; text-align: center; float: left;}
+.process article ul li {margin-right: -23px;}
+.process article ul li:nth-child(n+3) {border-color: #0B1465;}
+.process article ul li:nth-child(n+3) strong {color: #0B1465;}
+.process article ul li strong {font: 600 24px 'Noto Sans KR', sans-serif; color: #2634B7;}
+.process article ul li p {font: 600 18px 'Noto Sans KR', sans-serif; color: #333;}
+.process article p.bar {width: 940px; margin-bottom: 16px;}
+.process article p.bar img {width: 100%;}
+.process article .container > p:last-child {font: 300 16px 'Noto Sans KR', sans-serif; line-height: 24px; color: #333;}
+.process article .container > p:last-child strong:nth-child(2) {color: #2634B7;}
+.process article .container > p:last-child strong:last-child {color: #0B1465;}
 
 
 .make_portfolio {background-color: #F5F5FC; padding-top: 100px; position: relative; z-index: 10;}
@@ -67,7 +69,7 @@
 .make_portfolio article:nth-child(1) .container div p strong {display: block; font: 600 18px 'Noto Sans KR', sans-serif; color: #322D2D;}
 .make_portfolio article:nth-child(1) .container div p span {display: block;  font: 300 16px 'Noto Sans KR', sans-serif; color: #322D2D}
 .make_portfolio .sw_banner_slide {padding-bottom: 90px;}
-.make_portfolio .sw_banner_slide .container {padding-left: 70px; box-sizing: border-box;}
+.make_portfolio .sw_banner_slide .container {padding-left: 70px; box-sizing: border-box; }
 .make_portfolio .sw_banner_slide .container h3 {font: 600 20px 'Noto Sans KR', sans-serif; color: #333; margin-bottom: 20px;}
 .make_portfolio .sw_banner_slide .container .banner_slide {width: 100%; height: 295px; position: relative; }
 .make_portfolio .sw_banner_slide .container .banner_slide .box {width: 100%; height: 100%;}
@@ -111,8 +113,8 @@
 .class_information .instructor_info {overflow: hidden;margin-bottom: 100px;}
 .class_information .instructor_info h2 {margin-bottom: 60px; font: Bold 28px 'Noto Sans KR', sans-serif; color: #fff;}
 .class_information .instructor_info .box {float: left; position: relative; width: 432px; height: 515px; color: #333; border-radius: 16px; padding: 136px 38px 0 40px; box-sizing: border-box;  background-color:#fff;}
-.class_information .instructor_info .box::after {content: url(../img/d_WPPA/WPPA_teacher_01.png); position: absolute ; top: -40px; left: 40px;}
-.class_information .instructor_info .box:nth-of-type(2)::after {content: url(../img/d_WPPA/WPPA_teacher_02.png);}
+.class_information .instructor_info .box::after {content: ''; width: 156px; height: 156px; display: block; background: url(../img/d_WPPA/WPPA_teacher_01.png) no-repeat center; background-size: cover; position: absolute ; top: -40px; left: 40px;}
+.class_information .instructor_info .box:nth-of-type(2)::after {background: url(../img/d_WPPA/WPPA_teacher_02.png) no-repeat center; background-size: cover;}
 .class_information .instructor_info .box:first-of-type {margin-right: 30px;}
 .class_information .instructor_info .box dl { box-sizing: border-box; font-family:'Noto Sans KR', sans-serif; font-weight: 300; font-size: 16px; overflow: hidden;}
 .class_information .instructor_info .box dl dt {float: left; margin-right: 10px;}
@@ -138,41 +140,84 @@
 .class_information article .image_slide .indicator li.on {background-color: #FFCC00;}
 .class_information article .image_slide .indicator li a {display: block; width: 100%; height: 100%;}
 .class_information article .image_slide .indicator li + li {margin-left: 30px;}
-.class_information article .image_slide .control {width: 80%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+.class_information article .image_slide .control {width: 65%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
 .class_information article .image_slide .control li {width: 32px; height: 32px; border-radius: 8px; background-color: #F1F2F7;float: left; position: relative;}
 .class_information article .image_slide .control li a {display: block; width: 100%; height: 100%;}
 .class_information article .image_slide .control li a img {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 .class_information article .image_slide .control li:last-child {float: right;}
 
-
-.deferred_payment {padding: 106px 0 65px; background: #EBE5DD url(../img/d_WPPA/00.png) no-repeat 80% 180%;}
+.deferred_payment {padding: 110px 0 172px; background: #EBE5DD url(../img/d_WPPA/00.png) no-repeat 80% 100%; background-size: 500px;}
 .deferred_payment .container {overflow: hidden;}
-.deferred_payment .container > p {margin-bottom: 70px; font: 300 28px/40px 'Noto Sans KR', sans-serif; color: #333;}
-.deferred_payment .container > p > em {font-weight: 600;}
-.deferred_payment .container > p > strong {color: #F96432;}
-.deferred_payment .container > p > a {display: inline-block; border-radius: 25px; padding: 0 15px; box-shadow: 2px 2px 4px #B1A48CA3; background-color: #F96432; color: #FFF; font: 300 16px 'Noto Sans KR', sans-serif; line-height: 34px; vertical-align: text-bottom;}
-.deferred_payment .container > p > a:first-of-type {margin-right: 10px;}
-.deferred_payment .container > div:first-of-type {margin-right: 40px;}
-.deferred_payment .container > div {width: 460px; height: 560px; background-color: #FCFBF9; border-radius: 35px; float: left; padding: 40px 0 0 40px; box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif; color: #333; }
-.deferred_payment .container > div > strong {display: block; font-weight: 600; font-size: 24px; margin-bottom: 20px;}
-.deferred_payment .container > div > ol {padding-left: 30px; box-sizing: border-box; position: relative; height: 80%; clear: both;}
-.deferred_payment .container > div:first-of-type ol::before {content: ''; display: block; position: absolute; top: 0; left: 0; width: 20px; height: 100%; background-color: #FF8000; box-shadow: 0px 3px 6px #B4AA9D40; border-radius: 9px;}
-.deferred_payment .container > div > ol li {height: 33.3%; position: relative;}
-.deferred_payment .container > div > ol li::before {content: ''; display: block; width: 13px; height: 13px; background-color: #fff; border-radius: 50%; position: absolute; left: -27px; top: 5px; z-index: 10;}
-.deferred_payment .container > div > ol li > strong {font-size: 20px; }
-.deferred_payment .container > div > ol li > p {font-size: 16px; width: 340px; word-break: keep-all;}
-.deferred_payment .container > div:last-child > strong {float: left; margin-right: 10px; }
-.deferred_payment .container > div:last-child > p {float: left; background-color: #FFF; height: 33px; border: 1px solid #EBE5DD; border-radius: 10px; padding: 0 10px; overflow: hidden; line-height: 33px;}
-.deferred_payment .container > div:last-child > p span {float: left; font-size: 14px; }
-.deferred_payment .container > div:last-child > p span:last-child {margin-right: 0;}
-.deferred_payment .container > div:last-child > p span::after {float: right; margin: 15px 12px 0 5px; content: ''; display: block; width: 25px; height: 6px; background-color: #FF8000; border-radius: 3px;}
-.deferred_payment .container > div:last-child > p span:last-child::after {background-color: #006700;}
-.deferred_payment .container > div:last-child ol li {height: 25%;}
-.deferred_payment .container > div:last-child ol li:nth-child(3) {height: 20%;}
-.deferred_payment .container > div:last-child ol li:nth-child(4) {height: 30%;}
-.deferred_payment .container > div:last-child ol li::after {content: ''; display: block; width: 20px; height: 120%; background-color: #FF8000; position: absolute; left: -30px; top: 0; box-shadow: 0px 3px 6px #B4AA9D40; border-radius: 9px;}
-.deferred_payment .container > div:last-child ol li:nth-child(even)::after {background-color: #006700;}
-.deferred_payment .container > div:last-child ol li:last-child:after {height: 100%;}
+.deferred_payment .container > p {margin-bottom: 45px; font: 300 24px/32px 'Noto sans KR',sans-serif; color: #333;}
+.deferred_payment .container > p em {font-weight: 600;}
+.deferred_payment .container > p strong {color: #F96432;}
+.deferred_payment .container > p a {display: inline-block; border-radius: 25px; padding: 0 15px; box-shadow: 2px 2px 4px #B1A48CA3; background-color: #F96432; color: #FFF; font: 300 16px 'Noto sans KR',sans-serif; line-height: 34px; vertical-align: text-bottom;}
+.deferred_payment .container > p a:first-of-type {margin-right: 10px; margin-left: 10px;}
+.deferred_payment .container > div {width: 460px; height: 670px; background-color: #FCFBF9; border-radius: 35px; float: left; padding: 45px 35px 55px 40px; box-sizing: border-box;}
+.deferred_payment .container > div > strong {display: block; font: 600 20px 'Noto sans KR',sans-serif; margin-bottom: 24px; color: #333;}
+.deferred_payment .container > div ol {height: 90%; padding-left: 30px; box-sizing: border-box; position: relative;}
+.deferred_payment .container > div ol::before {content: ''; display: block; position: absolute; top: 0; left: 0px; width: 20px; height: 100%; background-color: #FF8000; box-shadow: 0px 3px 6px #B4AA9D40; border-radius: 9px;} 
+.deferred_payment .container > div ol li {color: #333; position: relative; height: 25%;}
+.deferred_payment .container .prepaid ol li:nth-child(2) {height: 50%;}
+.deferred_payment .container > div > ol > li::before {content: ''; display: block; width: 13px; height: 13px; background-color: #fff; border-radius: 50%; position: absolute; left: -27px; top: 5px; z-index: 10;}
+.deferred_payment .container > div ol li > strong {font: 600 18px 'Noto sans KR',sans-serif;}
+.deferred_payment .container > div ol li > p {font: 300 14px 'Noto sans KR',sans-serif; word-break: keep-all;}
+.deferred_payment .container > div ol li ul li {font: 300 14px 'Noto sans KR',sans-serif; padding-left: 10px; text-indent: -10px; word-break: keep-all;}
+.deferred_payment .container .deferred {margin-left: 40px; position: relative;}
+.deferred_payment .container .deferred ol li::after {content: ''; display: block; width: 20px; height: 120%; background-color: #FF8000; position: absolute; left: -30px; top: 0; box-shadow: 0px 3px 6px #B4AA9D40; border-radius: 9px;}
+.deferred_payment .container .deferred ol li:nth-child(even)::after {background-color: #006700;}
+.deferred_payment .container .deferred ol li {height: 30%;}
+.deferred_payment .container .deferred ol li:nth-child(n+3) {height: 20%;}
+.deferred_payment .container .deferred > p {position: absolute; top: 40px; right: 35px; width: 250px; height: 33px; background-color: #fff; border: 1px solid #EBE5DD; border-radius: 10px;}
+.deferred_payment .container .deferred > p span {float: left; font-size: 13px; line-height: 35px; margin-left: 12px; }
+.deferred_payment .container .deferred > p span::after {float: right; margin: 15px 0 0 2px; content: ''; display: block; width: 25px; height: 6px; background-color: #FF8000; border-radius: 3px;}
+.deferred_payment .container .deferred > p span:last-child::after {background-color: #006700;}
+
+
+.application {background-color: #EBE5DD; color: #333; padding-bottom: 130px;}
+.application p:last-of-type {font: 300 16px/24px 'Noto sans KR',sans-serif; margin-bottom: 40px;}
+.application p.title {font: 300 24px/32px 'Noto sans KR',sans-serif;  margin-bottom: 8px;}
+.application span {font: 300 16px/24px 'Noto sans KR',sans-serif; display: block; margin-bottom: 20px; }
+.application span:last-of-type {overflow: hidden; margin-bottom: 0;}
+.application .container > span a.message {display: block; width: 318px; height: 67px; background: #fff url(../img/d_WPPA/message.png) no-repeat right center; background-size: contain;
+     border-radius: 68px; margin-right: 20px; overflow: hidden; font: 600 14px 'Noto sans KR',sans-serif; line-height: 67px; text-indent: 15px; transition: all 0.4s;}
+.application .container > span a.news_letter {display: block; width: 318px; height: 67px; background: #fff url(../img/d_WPPA/news_letter.png) no-repeat right center; background-size: contain; 
+    border-radius: 68px; overflow: hidden; font: 600 14px 'Noto sans KR',sans-serif; line-height: 67px; text-indent: 15px; transition: all 0.4s;}
+.application .container > span a {float: left;}
+.application .container > span a:first-of-type:hover {color: #fff; background: #5399FB url(../img/d_WPPA/message_hover.png) no-repeat right center; background-size: contain; }
+.application .container > span a:last-of-type:hover {color: #fff; background: #B074EE url(../img/d_WPPA/news_letter_hover.png) no-repeat right center; background-size: contain; }
+
+.application .layer { position: fixed; width: 100%; height: 100%; background-color:rgba(0, 0, 0, 0.5); left: 0; top: 0; z-index: 100000; display: none; }
+.application .layer > div { position: absolute; left: 50%; top: 45%; width: 525px; border-radius: 31px; background-color: #fff; transform: translate(-50%,-50%); display: none; box-sizing: border-box; color: #333; }
+.application .layer > div .close_btn {position: absolute; top: 20px; right: 30px;}
+.application .layer > div strong {font: 600 16px/20px 'Noto sans KR',sans-serif; margin-bottom: 10px; display: block;}
+.application .layer > div p {font: 300 14px/22px 'Noto sans KR',sans-serif; margin-bottom: 32px;word-break: keep-all;}
+.application .layer > div span {display: block;}
+.application .layer > div span a {display: block; width: 187px; height: 50px;border-radius: 25px; background-color: #FF8000; color: #fff; font: 600 14px/50px 'Noto sans KR',sans-serif; text-align: center; float: left;}
+.application .layer > .login { padding: 70px 35px 48px 44px;}
+.application .layer > .login::before {content: url(../img/d_WPPA/login.png); position: absolute; top: -20px; left: 30px; }
+.application .layer > .login span a:first-of-type {margin-right: 20px;}
+.application .layer > .login span {width: 394px; margin: 0 auto;}
+.application .layer > .m_completion { padding: 70px 50px 57px 44px;}
+.application .layer > .m_completion::before {content: url(../img/d_WPPA/m_completion.png); position: absolute; top: -20px; left: 30px; }
+.application .layer > .m_completion p {  margin-bottom: 0;}
+.application .layer > .letter_apply { width: 604px; padding: 70px 55px 30px 44px;}
+.application .layer > .letter_apply::before {content: url(../img/d_WPPA/news_icon.png); position: absolute; top: -20px; left: 30px; }
+.application .layer > .letter_apply strong {margin-bottom: 4px;}
+.application .layer > .letter_apply span {font: 300 14px/22px 'Noto sans KR',sans-serif; display: block; margin-bottom: 12px;}
+.application .layer > .letter_apply ul {margin-bottom: 10px;}
+.application .layer > .letter_apply ul li {font: 300 12px/18px 'Noto sans KR',sans-serif;}
+.application .layer > .letter_apply form label:first-child {display: block; font: 600 14px 'Noto sans KR',sans-serif; margin-bottom: 26px;}
+.application .layer > .letter_apply form label:first-child input {margin-right: 5px; vertical-align: bottom; width: 18px; height: 18px; }
+.application .layer > .letter_apply form label:nth-child(n+2) {font: 600 14px 'Noto sans KR',sans-serif;}
+.application .layer > .letter_apply form label:nth-child(2) input {margin-left: 8px; width: 152px; height: 28px;}
+.application .layer > .letter_apply form label:nth-child(2) {margin-right: 7px;}
+.application .layer > .letter_apply form label:nth-child(3) input {width: 243px; height: 28px; margin-left: 8px; }
+.application .layer > .letter_apply form .button {width: 160px; display: block; height: 46px; background-color: #FF8000; color: #fff; text-align: center; font: 600 14px 'Noto sans KR',sans-serif; line-height: 46px; border: 0; border-radius: 25px; margin: 30px auto 0;}
+.application .layer.on {display: block;} 
+.application .layer > .login.on {display: block;}
+.application .layer > .letter_apply.on {display: block;}
+.application .layer > .m_completion.on {display: block;}
 
 
 .location {background-color: #F1F2F7; padding: 51px 0 100px;}
@@ -199,9 +244,9 @@
 
 
 .main_visual .introduction.now .container div div {animation: fade1 1s 0.6s forwards;} 
-.process .portfolio_process.now ul li:nth-child(1) { animation: fadeLeft 0.8s 0.5s forwards;}
-.process .portfolio_process.now ul li:nth-child(2) { animation: fadeLeft 0.8s 1s forwards;}
-.process .portfolio_process.now ul li:nth-child(3) { animation: fadeLeft 0.8s 1.5s forwards;}
+.main_visual .portfolio_process.now ul li:nth-child(1) { animation: fadeLeft 0.8s 0.5s forwards;}
+.main_visual .portfolio_process.now ul li:nth-child(2) { animation: fadeLeft 0.8s 1s forwards;}
+.main_visual .portfolio_process.now ul li:nth-child(3) { animation: fadeLeft 0.8s 1.5s forwards;}
 .make_portfolio article:nth-child(1).now .container div::after {animation: fadeWidth 1s 0.5s forwards;}
 .enrolment .recruit.now ul li:nth-child(1) {animation: fadeLeft 0.6s 0.5s forwards;}
 .enrolment .recruit.now ul li:nth-child(2) {animation: fadeLeft 0.6s 0.8s forwards;}

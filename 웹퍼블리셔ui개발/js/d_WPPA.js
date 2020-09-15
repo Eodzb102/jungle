@@ -3,14 +3,14 @@ $(function() {
 
     scrollUI();
     scrollGrowth('.main_visual .introduction');
-    scrollGrowth('.process .portfolio_process');
+    scrollGrowth('.main_visual .portfolio_process');
     scrollGrowth('.make_portfolio article:nth-child(1)');
     scrollGrowth('.enrolment .recruit');
 
 
     $(window).on('scroll', function() {
         scrollGrowth('.main_visual .introduction');
-        scrollGrowth('.process .portfolio_process');
+        scrollGrowth('.main_visual .portfolio_process');
         scrollGrowth('.make_portfolio article:nth-child(1)');
         scrollGrowth('.enrolment .recruit');
 
@@ -31,6 +31,7 @@ $(function() {
     setBannerSlide('.make_portfolio .sw_banner_slide');
 
     function setBannerSlide(selector) {
+        if ($(window).width() < 768) return false;
         var offsetLeft = 0;
         var boxWidth = $(selector).find('.slide').innerWidth();
         var barWidth = 0;
@@ -74,7 +75,7 @@ $(function() {
             barWidth = 0;
             $(selector).find('.slide li').each(function(i) {
                 barWidth += $(this).outerWidth(true);
-                $(this).css({'left': (100 * i) + '%'});
+                $(this).css({'left': (104 * i) + '%'});
             });
 
             minOffsetLeft = boxWidth - barWidth;
@@ -102,15 +103,14 @@ $(function() {
 
         }
         
-        
     }
     
 
     // 스크롤 애니메이션
     function scrollGrowth(selector) {
         var scrollTop = $(document).scrollTop();
-        var minScroll = $(selector).offset().top - $(window).height() / 2;
-        var maxScroll = $(selector).offset().top + $(selector).outerHeight() ;
+        var minScroll = $(selector).offset().top - $(window).height() / 4;
+        var maxScroll = $(selector).offset().top + $(selector).outerHeight();
 
     
         // 스크롤 클래스
@@ -197,6 +197,8 @@ $(function() {
 
     // 모바일 스와이프
     setSwipeSlide('.class_information article .image_slide',1)
+    setSwipeSlide('.make_portfolio .sw_banner_slide',1);
+
     function setSwipeSlide(selector, first) {
         if ($(window).width() > 768) return false;
         var numSlide = $(selector).find('ul.slide li').length;
@@ -209,39 +211,62 @@ $(function() {
         var delX = 0;
         var delY = 0;
         var offsetX = 0;
+        var isTouched = false;
         var direction = '';
 
+        // 초기화
         $(selector).find('ul.slide li').each(function(i) {
-            $(this).css({'left': (i * 100) + '%', 'display': 'block'});
+            $(this).css({'left': ( i * 104 ) + '%','display': 'block'});
+            // $(this).css({'left': (i * 100) + '%', 'display': 'block'});
         });
 
         showSlide(slideFirst);
-    
+
         $(selector).find('ul.indicator li a').on('click', function() {
             var index = $(selector).find('ul.indicator li').index($(this).parent());
             showSlide(index + 1);
         });
-        $(selector).find('.control a.prev').on('click', function() {
-            $(this).find('img').stop(true).animate({'left': '-10px'}, 50).animate({'left': 0}, 100);
+        $(selector).find('p.control a.prev').on('click', function() {
             showSlide(slidePrev);
         });
-        $(selector).find('.control a.next').on('click', function() {
-            $(this).find('img').stop(true).animate({'right': '-10px'}, 50).animate({'right': 0}, 100);
+        $(selector).find('p.control a.next').on('click', function() {
             showSlide(slideNext);
         });
-
+ 
         
         // swipe
         $(selector).find('ul.slide').on('touchstart', function(e) {
-            $(selector).find('.control span.bar').stop(true).css({'width': 0});
             $(selector).find('ul.slide').css({'transition': 'none'});
+            isTouched = true;
             startX = e.touches[0].clientX;
             startY = e.touches[0].clientY;
             offsetX = $(this).position().left;
-            
-            document.addEventListener('touchmove', touchMove, {passive: false});
-            
-            $(document).on('touchend', function() {
+        });
+        document.addEventListener('touchmove', function(e) {
+            if (isTouched === true) {
+                delX = e.touches[0].clientX - startX;
+                delY = e.touches[0].clientY - startY;
+                if (direction === '') {
+                    //e.preventDefault();
+                    if (Math.abs(delX) > 5) {
+                        direction = 'horizon';
+                    } else if (Math.abs(delY) > 5) {
+                        direction = 'vertical';
+                    }
+                } else if (direction === 'horizon') {
+                    e.preventDefault();
+                    if ((slideNow === 1 && delX > 0) || (slideNow === numSlide && delX < 0)) {
+                        console.log('dd')
+                        delX = delX / 10;
+                    }
+                    $(selector).find('ul.slide').css({'left': (offsetX + delX) + 'px'});
+                } else if (direction === 'vertical') {
+                    delX = 0;
+                }
+            }
+        }, {passive: false});
+        $(document).on('touchend', function() {
+            if (isTouched === true) {
                 if (delX < -50 && slideNow !== numSlide) {
                     showSlide(slideNext);
                 } else if (delX > 50 && slideNow !== 1) {
@@ -249,41 +274,24 @@ $(function() {
                 } else {
                     showSlide(slideNow);
                 }
+                isTouched = false;
                 direction = '';
-                
-                document.removeEventListener('touchmove', touchMove);
-                $(document).off('touchend');
-            });
-        });
-        
-        function touchMove(e) {
-            delX = e.touches[0].clientX - startX;
-            delY = e.touches[0].clientY - startY;
-            if (direction === '') {
-                e.preventDefault();
-                if (Math.abs(delX) > 5) {
-                    direction = 'horizon';
-                } else if (Math.abs(delY) > 5) {
-                    direction = 'vertical';
-                }
-            } else if (direction === 'horizon') {
-                e.preventDefault();
-                if ((slideNow === 1 && delX > 0) || (slideNow === numSlide && delX < 0)) {
-                    delX = delX / 10;
-                }
-                $(selector).find('ul.slide').css({'left': (offsetX + delX) + 'px'});
-            } else if (direction === 'vertical') {
-                delX = 0;
             }
-        }
-    
+        });
+
         function showSlide(n) {
-            $(selector).find('.control span.bar').stop(true).css({'width': 0});
+            if (slideNow === 0) {
+                $(selector).find('ul.slide').css({'transition': 'none', 'left': -((n - 1) * 100) + '%'});
+            } else {
+                $(selector).find('ul.slide').css({'transition': 'left 0.3s', 'left': -((n - 1) * 104) + '%'});
+            }
+            /*
             if (slideNow === 0) {
                 $(selector).find('ul.slide').css({'transition': 'none', 'left': -((n - 1) * 100) + '%'});
             } else {
                 $(selector).find('ul.slide').css({'transition': 'left 0.3s', 'left': -((n - 1) * 100) + '%'});
             }
+            */
             $(selector).find('ul.indicator li').removeClass('on');
             $(selector).find('ul.indicator li:eq(' + (n - 1) + ')').addClass('on');
             slideNow = n;
@@ -292,6 +300,6 @@ $(function() {
             //console.log(slidePrev + ' / ' + slideNow + ' / ' + slideNext);
 
         }
-    }    
+    }
 
 })
